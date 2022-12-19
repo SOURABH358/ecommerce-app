@@ -1,3 +1,8 @@
+import Navbar from "../components/Navbar"
+import Hero from "../components/Hero"
 export default function Home(){
-    return <h1>Home</h1>
+    return <section id = "home__section" className="w-full h-full">
+        <Navbar/>
+        <Hero/>
+    </section>
 }
