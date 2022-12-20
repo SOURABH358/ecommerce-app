@@ -21,20 +21,22 @@ export default function Hero() {
             fadeEffect={{
                 crossFade : true
             }}
-            autoplay={{
-                delay: 2000,
-                disableOnInteraction: false,
-            }}
+            // autoplay={{
+            //     delay: 2000,
+            //     disableOnInteraction: false,
+            // }}
             modules={[Autoplay, Pagination, Navigation]}
             pagination={{
                 clickable: true
             }}
             navigation={true}
         >
-            <SwiperSlide className=""><div className="bg-pink h-[10rem]">Slide 1</div></SwiperSlide>
-            <SwiperSlide className=""><div className="bg-pink h-[10rem]">Slide 2</div></SwiperSlide>
-            <SwiperSlide className=""><div className="bg-pink h-[10rem]">Slide 3</div></SwiperSlide>
-            <SwiperSlide className=""><div className="bg-pink h-[10rem]">Slide 4</div></SwiperSlide>
+            <SwiperSlide className=""><div className="bg-gradient-to-br from-purple to-pink h-[20rem]">
+                <div></div>
+                </div></SwiperSlide>
+            <SwiperSlide className=""><div className="bg-pink h-[20rem]">Slide 2</div></SwiperSlide>
+            <SwiperSlide className=""><div className="bg-pink h-[20rem]">Slide 3</div></SwiperSlide>
+            <SwiperSlide className=""><div className="bg-pink h-[20rem]">Slide 4</div></SwiperSlide>
         </Swiper>
     </section>
 }
