@@ -21,15 +21,15 @@ export default function Hero() {
             fadeEffect={{
                 crossFade : true
             }}
-            // autoplay={{
-            //     delay: 2000,
-            //     disableOnInteraction: false,
-            // }}
+            autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+            }}
             modules={[Autoplay, Pagination, Navigation]}
             pagination={{
                 clickable: true
             }}
-            navigation={true}
+            // navigation={true}
         >
             <SwiperSlide className=""><div className="bg-gradient-to-br from-purple to-pink h-[20rem]">
                 <img className='w-full ' src='/assets/banners/banner-1.jpg' alt="banner-1"/>
