@@ -1,7 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper";
+import { BsChevronCompactRight,BsChevronCompactLeft } from "react-icons/bs";
 import 'swiper/css';
-import "swiper/css/pagination";
+import "swiper/css/navigation";
 import { useRef } from 'react';
 
 export default function ProductRow({title}){
@@ -39,8 +40,8 @@ export default function ProductRow({title}){
         modules={[Navigation]}
         className="mySwiper"
       >
-        <div className = "absolute top-[50%] -translate-y-[50%] left-1 z-10 cursor-pointer" ref={preEl}>◀</div>
-        <div className = "absolute top-[50%] -translate-y-[50%] right-1 z-10 cursor-pointer" ref={nextEl}>▶</div>
+        <div className = "absolute top-[50%] -translate-y-[50%] text-3xl left-1 z-10 cursor-pointer text-[white]" ref={preEl}><BsChevronCompactLeft/></div>
+        <div className = "absolute top-[50%] -translate-y-[50%] text-3xl right-1 z-10 cursor-pointer text-[white]" ref={nextEl}><BsChevronCompactRight/></div>
         <SwiperSlide><div className='h-[20rem] bg-purple rounded-lg'>Slide 1</div></SwiperSlide>
         <SwiperSlide><div className='h-[20rem] bg-purple rounded-lg'>Slide 2</div></SwiperSlide>
         <SwiperSlide><div className='h-[20rem] bg-purple rounded-lg'>Slide 3</div></SwiperSlide>
