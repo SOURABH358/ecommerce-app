@@ -31,12 +31,25 @@ export default function Hero() {
             }}
             // navigation={true}
         >
-            <SwiperSlide className=""><div className="bg-gradient-to-br from-purple to-pink h-[20rem]">
-                <img className='w-full ' src='/assets/banners/banner-1.jpg' alt="banner-1"/>
+            <SwiperSlide className="">
+                <div className="bg-gradient-to-br from-purple to-pink h-[20rem]">
+                    <img className='w-full ' src='/assets/banners/banner-1.jpg' alt="banner-1"/>
                 </div></SwiperSlide>
-            <SwiperSlide className=""><div className="bg-pink h-[20rem]">Slide 2</div></SwiperSlide>
-            <SwiperSlide className=""><div className="bg-pink h-[20rem]">Slide 3</div></SwiperSlide>
-            <SwiperSlide className=""><div className="bg-pink h-[20rem]">Slide 4</div></SwiperSlide>
+            <SwiperSlide className="">
+                <div className="bg-pink h-[20rem]">
+                    <img className='w-full h-full' src='/assets/banners/banner-2.jpg' alt="banner-2"/>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide className="">
+                <div className="bg-pink h-[20rem]">
+                    <img className='w-full h-full' src='/assets/banners/banner-3.jpg' alt="banner-3"/>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide className="">
+                <div className="bg-pink h-[20rem]">
+                    <img className='w-full h-full' src='/assets/banners/banner-4.jpg' alt="banner-4"/>
+                </div>
+            </SwiperSlide>
         </Swiper>
     </section>
 }
