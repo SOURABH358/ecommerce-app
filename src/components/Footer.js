@@ -1,6 +1,6 @@
 export default function Footer(){
     return <section id = "footer__section" className="w-full py-16 bg-purple">
-        <div className="w-[60%] mx-auto grid grid-cols-4 gap-x-10 gap-y-8">
+        <div className="w-[80%] md:w-[60%] mx-auto grid md:grid-cols-4 grid-cols-2 gap-x-20 gap-y-10 md:gap-x-10 md:gap-y-8 ">
             <a className = "text-[white] no-underline" href="#">Home</a>
             <a className = "text-[white] no-underline" href="#">Fashion</a>
             <a className = "text-[white] no-underline" href="#">Womens Wear</a>
