@@ -21,7 +21,7 @@ export default function Hero() {
             <option>Sports Wear</option>
             <option>Furnitures</option>
         </select>
-        <Swiper className="mySwiper"
+        <Swiper className="mySwiper md:h-[20rem] h-[15rem]"
             slidesPerView={1}
             allowTouchMove={false}
             centeredSlides={true}
@@ -41,21 +41,21 @@ export default function Hero() {
             // navigation={true}
         >
             <SwiperSlide className="">
-                <div className="bg-gradient-to-br from-purple to-pink h-[20rem]">
+                <div className="bg-gradient-to-br from-purple to-pink h-full">
                     <img className='w-full ' src='/assets/banners/banner-1.jpg' alt="banner-1"/>
                 </div></SwiperSlide>
             <SwiperSlide className="">
-                <div className="bg-pink h-[20rem]">
+                <div className="bg-pink h-full">
                     <img className='w-full h-full' src='/assets/banners/banner-2.jpg' alt="banner-2"/>
                 </div>
             </SwiperSlide>
             <SwiperSlide className="">
-                <div className="bg-pink h-[20rem]">
+                <div className="bg-pink h-full">
                     <img className='w-full h-full' src='/assets/banners/banner-3.jpg' alt="banner-3"/>
                 </div>
             </SwiperSlide>
             <SwiperSlide className="">
-                <div className="bg-pink h-[20rem]">
+                <div className="bg-pink h-full">
                     <img className='w-full h-full' src='/assets/banners/banner-4.jpg' alt="banner-4"/>
                 </div>
             </SwiperSlide>
