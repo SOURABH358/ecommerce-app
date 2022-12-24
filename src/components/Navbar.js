@@ -1,8 +1,13 @@
 import { useState } from "react";
 import { BsSearch, BsFillCartFill, BsXLg } from "react-icons/bs";
+import { signInWithRedirect } from "firebase/auth";
+import { auth, provider } from "../firebase/Firebase";
 export default function Navbar() {
     const [menu, showMenu] = useState(false)
     // const [menu, showMenu] = useState(false)
+    function handleLogin(){
+        signInWithRedirect(auth, provider)
+    }
     return <nav className="w-full h-[6rem] bg-gradient-to-r from-purple to-pink px-8 flex items-center justify-between">
         <p className="text-[white] text-[1.5rem]">Shopzy</p>
         <form className="rounded-md bg-[white] overflow-hidden">
@@ -12,11 +17,11 @@ export default function Navbar() {
             </button>
         </form>
         <div className="hidden md:flex text-[white] gap-6 items-center">
-            <p className="md:block cursor-pointer px-2 py-1 border-2 border-[white] rounded-md hover:bg-purple hover:border-purple shadow-lg">Login</p>
+            <p className="md:block cursor-pointer px-2 py-1 border-2 border-[white] rounded-md hover:bg-purple hover:border-purple shadow-lg" onClick={handleLogin}>Login</p>
             <p className="cursor-pointer"><BsFillCartFill className="text-[white] text-2xl hover:text-purple shadow-lg" /></p>
             <div className="w-[3rem] h-[3rem] rounded-[50%] hover:border-4 hover:border-[white] bg-purple"></div>
         </div>
-        <div className="md:hidden block flex gap-6 items-center">
+        <div className="md:hidden flex gap-6 items-center">
             {/* <p className="md:block cursor-pointer px-2 py-1 border-2 border-[white] text-[white] rounded-md hover:bg-purple hover:border-purple shadow-lg">Login</p> */}
 
             <div className="w-[3rem] h-[3rem] rounded-[50%] hover:border-4 hover:border-[white] bg-purple" onClick={() => showMenu(true)}></div>
