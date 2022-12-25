@@ -2,7 +2,7 @@ import { useState } from "react";
 import CartItem from "./CartItem";
 export default function AddtoCart() {
     const [totalItem, setTotalItem] = useState(0);
-    return <section>
+    return <section className="py-8">
         <div className="w-full flex items-center justify-center">
             <div className="w-4 h-4 rounded-[50%] bg-purple"></div>
             <div className="w-[10rem] h-2 bg-[grey]"></div>
