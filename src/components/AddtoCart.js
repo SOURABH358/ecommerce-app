@@ -1,5 +1,7 @@
+import { useState } from "react";
 import CartItem from "./CartItem";
 export default function AddtoCart() {
+    const [totalItem, setTotalItem] = useState(0);
     return <section>
         <div className="w-full flex items-center justify-center">
             <div className="w-4 h-4 rounded-[50%] bg-purple"></div>
@@ -26,11 +28,13 @@ export default function AddtoCart() {
                     <p className="font-semibold">Become a promoter get extra discounts
                     </p>
                 </div>
-                <h3 className="text-2xl font-semibold mt-4 text-center">Cart</h3>
-                <CartItem/>
-                <CartItem/>
-                <CartItem/>
-
+                <h3 className="text-2xl font-semibold mt-4 mb-8 text-center">Cart</h3>
+                <CartItem
+                setTotalItem={setTotalItem}/>
+                <CartItem
+                setTotalItem={setTotalItem}/>
+                <CartItem
+                setTotalItem={setTotalItem}/>
             </div>
             <div className="md:w-[30%] w-full">
                 <p className="text-2xl font-semibold mb-4">Summary</p>
@@ -40,7 +44,7 @@ export default function AddtoCart() {
                 </div>
                 <div className="w-full flex justify-between py-2">
                     <p>Total Items</p>
-                    <p className="font-extrabold">1</p>
+                    <p className="font-extrabold">{totalItem}</p>
                 </div>
                 <div className="w-full flex justify-between py-2">
                     <p>Expected Shipping</p>
