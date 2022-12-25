@@ -4,17 +4,22 @@ import Payment from "../components/Payment";
 import Confirmed from "../components/Confirmed";
 import { useState } from "react";
 export default function Cart(){
-    const [showCart, setShowCart] = useState(false)
+    const [showCart, setShowCart] = useState(true)
     const [showForm, setShowForm] = useState(false)
     const [showPayment, setShowPayment] = useState(false)
     return <section className="w-full h-full">
         {showCart?<AddtoCart
         setShowCart={setShowCart}
-        setShowForm={setShowForm}/>:null}
+        setShowForm={setShowForm}/>
+        :null}
         {showForm?<AddressForm
         setShowForm={setShowForm}
-        setShowPayment={setShowPayment}/>:null}
-        {showPayment?<Payment/>:null}
-        <Confirmed/>
+        setShowPayment={setShowPayment}/>
+        :null}
+        {showPayment?<Payment
+        setShowPayment={setShowPayment}/>
+        :null}
+        {!showCart&!showForm&!showPayment?<Confirmed
+        />:null}
     </section>
 }

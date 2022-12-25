@@ -1,4 +1,4 @@
-export default function Payment() {
+export default function Payment({setShowPayment}) {
     return <section className="w-full min-h-[100vh] pt-8">
         <div className="w-full flex items-center justify-center">
             <div className="w-4 h-4 rounded-[50%] bg-purple"></div>
@@ -34,7 +34,7 @@ export default function Payment() {
                         <input className="w-full focus:outline-none border-2 border-purple py-2 px-2 rounded-lg" type="number" placeholder="CVV" />
                     </div>
                     <input className="w-full focus:outline-none border-2 border-purple py-2 px-2 rounded-lg" type="text" placeholder="Name on card" />
-                    <button className="w-full bg-gradient-to-br from-purple to-pink border-none rounded-xl py-3 my-8 text-[white]" type="button">Pay</button>
+                    <button className="w-full bg-gradient-to-br from-purple to-pink border-none rounded-xl py-3 my-8 text-[white]" type="button" onClick={()=>setShowPayment(false)}>Pay</button>
                     <p className="w-full bg-light-purple text-center rounded-md py-2">The card will be saved for faster payment experience.</p>
                 </div>
             </div>
