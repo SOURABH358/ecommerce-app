@@ -108,6 +108,10 @@ export const products=[
         ]
     },
 ]
+
+export const categories=[
+    'Phones'
+]
 /*
 {
     id:6,

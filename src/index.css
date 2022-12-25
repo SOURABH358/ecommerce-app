@@ -10,4 +10,15 @@
 }
 .swiper-button-prev, .swiper-button-next{
     color:white;
+    padding: 2rem;
+    background-color: #5F0A87;
+    border-radius: 50%;
+    transform: translateY(-100%);
+    
+}
+#products .swiper-button-prev, #products .swiper-button-next{
+    color: white;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
 }

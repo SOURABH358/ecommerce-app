@@ -1,61 +1,67 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from "swiper";
-import { BsChevronCompactRight,BsChevronCompactLeft } from "react-icons/bs";
+import { Autoplay, Navigation, Pagination } from "swiper";
+import { BsChevronCompactRight, BsChevronCompactLeft,BsFillStarFill } from "react-icons/bs";
 import 'swiper/css';
 import "swiper/css/navigation";
-import { useRef } from 'react';
 
-export default function ProductRow({title}){
-    const preEl = useRef(null)
-    const nextEl = useRef(null)
-    return <section className="px-4 w-full relative my-8">
-        <h3 className="text-[1.25rem] text-[black] mb-4">{title}</h3>
+import { useRef } from 'react';
+import { products } from '../utils/data';
+
+export default function ProductRow({ category }) {
+    const preEl = useRef()
+    const nextEl = useRef()
+    return <section className="px-4 w-full relative my-8 bg-[white] py-8">
+        <h3 className="text-[1.25rem] text-[black] mb-4">{category}</h3>
         <Swiper
-        slidesPerView={6}
-        spaceBetween={10}
-        slidesPerGroup={6}
-        navigation={{
-            prevEl:preEl.current,
-            nextEl:nextEl.current
-        }}
-        breakpoints={{
-            320:{
-                slidesPerGroup:2,
-                slidesPerView:2
-            },
-            
-            640:{
-                slidesPerGroup:3,
-                slidesPerView:3
-            },
-            900:{
-                slidesPerGroup:4,
-                slidesPerView:4
-            },
-            1200:{
-                slidesPerGroup:6,
-                slidesPerView:6
-            }
-        }}
-        modules={[Navigation]}
-        className="mySwiper"
-      >
-        <div className = "absolute top-[50%] -translate-y-[50%] text-3xl left-1 z-10 cursor-pointer text-[white]" ref={preEl}><BsChevronCompactLeft/></div>
-        <div className = "absolute top-[50%] -translate-y-[50%] text-3xl right-1 z-10 cursor-pointer text-[white]" ref={nextEl}><BsChevronCompactRight/></div>
-        <SwiperSlide><div className='h-[20rem] bg-purple rounded-lg'>Slide 1</div></SwiperSlide>
-        <SwiperSlide><div className='h-[20rem] bg-purple rounded-lg'>Slide 2</div></SwiperSlide>
-        <SwiperSlide><div className='h-[20rem] bg-purple rounded-lg'>Slide 3</div></SwiperSlide>
-        <SwiperSlide><div className='h-[20rem] bg-purple rounded-lg'>Slide 4</div></SwiperSlide>
-        <SwiperSlide><div className='h-[20rem] bg-purple rounded-lg'>Slide 5</div></SwiperSlide>
-        <SwiperSlide><div className='h-[20rem] bg-purple rounded-lg'>Slide 6</div></SwiperSlide>
-        <SwiperSlide><div className='h-[20rem] bg-purple rounded-lg'>Slide 7</div></SwiperSlide>
-        <SwiperSlide><div className='h-[20rem] bg-purple rounded-lg'>Slide 8</div></SwiperSlide>
-        <SwiperSlide><div className='h-[20rem] bg-purple rounded-lg'>Slide 9</div></SwiperSlide>
-        <SwiperSlide><div className='h-[20rem] bg-purple rounded-lg'>Slide 10</div></SwiperSlide>
-        <SwiperSlide><div className='h-[20rem] bg-purple rounded-lg'>Slide 11</div></SwiperSlide>
-        <SwiperSlide><div className='h-[20rem] bg-purple rounded-lg'>Slide 12</div></SwiperSlide>
-        <SwiperSlide><div className='h-[20rem] bg-purple rounded-lg'>Slide 13</div></SwiperSlide>
-        <SwiperSlide><div className='h-[20rem] bg-purple rounded-lg'>Slide 14</div></SwiperSlide>
-      </Swiper>
+            slidesPerView={5}
+            spaceBetween={40}
+            slidesPerGroup={5}
+            navigation={{
+                clickable: true,
+                prevEl: preEl.current,
+                nextEl: nextEl.current
+            }}
+            breakpoints={{
+                320: {
+                    slidesPerGroup: 1,
+                    slidesPerView: 1
+                },
+
+                640: {
+                    slidesPerGroup: 2,
+                    slidesPerView: 2
+                },
+                900: {
+                    slidesPerGroup: 3,
+                    slidesPerView: 3
+                },
+                1200: {
+                    slidesPerGroup: 4,
+                    slidesPerView: 4
+                },
+                1440: {
+                    slidesPerGroup: 5,
+                    slidesPerView: 5
+                }
+            }}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="mySwiper"
+        >
+            {/* <div className="absolute top-[50%] font-bold -translate-y-[100%] text-[4rem] left-1 z-10 cursor-pointer text-purple" ref={preEl}><BsChevronCompactLeft /></div> */}
+            {/* <div className="absolute top-[50%] font-bold -translate-y-[100%] text-[4rem] right-1 z-10 cursor-pointer text-purple" ref={nextEl}><BsChevronCompactRight /></div> */}
+            {products.map(item => {
+                if (item.categories === category)
+                    return <SwiperSlide><div className=' rounded-lg'>
+                        <div className='h-[20rem] flex justify-center'>
+                            <img className='max-h-full' src={item.thumbnail} alt={`item-${item.id}`} /></div>
+                        <p className='text-center my-4 h-[3rem]'>{item.name}</p>
+                        <div className='flex justify-between'>
+                            <p className='text-dark-green flex items-center gap-x-1'><BsFillStarFill/><BsFillStarFill/><BsFillStarFill/><BsFillStarFill/>{item.ratings}</p>
+                            <p className='text-red'>-{item.discount} off</p>
+                        </div>
+                    </div></SwiperSlide>
+            })}
+
+        </Swiper>
     </section>
 }

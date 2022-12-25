@@ -1,11 +1,11 @@
 import ProductRow from "./ProductRow"
+import {categories} from "../utils/data"
 export default function Content(){
     return <section className="">
-        <ProductRow
-        title="Electronics"/>
-        <ProductRow
-        title="Mens Wear"/>
-        <ProductRow
-        title="Womens Wear"/>
+        {categories.map(item=>{
+            return <ProductRow
+            category={item}/> 
+        })}
+        
     </section>
 }

@@ -14,12 +14,11 @@ export default function Products() {
     const [cart, setCart] = useState(0)
     return <section className="w-full h-full">
         <Navbar />
-        <div className="md:w-[70%] md:mx-auto w-full md:py-[7rem] md:flex md:gap-x-[10rem]">
+        <div id="products" className="md:w-[70%] md:mx-auto w-full md:py-[7rem] md:flex md:gap-x-[10rem]">
             <Swiper
                 className="mySwiper md:w-[60rem] w-full relative text-[white]"
                 spaceBetween={50}
                 slidesPerView={1}
-                onSwiper={(swiper) => console.log(swiper)}
                 modules={[Autoplay, Pagination, Navigation]}
                 navigation={{
                     clickable:true,
