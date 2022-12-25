@@ -1,9 +1,8 @@
-
 export default function Login() {
     
     function handleSubmit(e){
         e.preventDefault();
-
+        
     }
     return <section className="login__section w-full h-[100vh] relative">
         <div className="fixed top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.3)] z-10"></div>
