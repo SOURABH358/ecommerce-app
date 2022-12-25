@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BsSearch, BsFillCartFill, BsXLg } from "react-icons/bs";
+import { BsSearch, BsFillCartFill } from "react-icons/bs";
 import { signInWithPopup } from "firebase/auth";
 import { auth, provider } from "../firebase/Firebase";
 import { collection, addDoc } from "firebase/firestore"; 

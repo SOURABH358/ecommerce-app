@@ -1,3 +1,4 @@
+import CartItem from "./CartItem";
 export default function AddtoCart() {
     return <section>
         <div className="w-full flex items-center justify-center">
@@ -17,7 +18,7 @@ export default function AddtoCart() {
                 <div className="py-2 px-4 border-2 border-[grey]">
                     <p className="text-purple font-semibold">Free Shipping for Members.</p>
                     <p>Become a Shopzy Member  for fast and free shipping.
-                        <a href="#">Join us</a>
+                        <a href="/">Join us</a>
                     </p>
                 </div>
                 <div className="py-2 px-4 bg-light-purple mt-2">
@@ -25,13 +26,17 @@ export default function AddtoCart() {
                     <p className="font-semibold">Become a promoter get extra discounts
                     </p>
                 </div>
-                <h3>Cart</h3>
+                <h3 className="text-2xl font-semibold mt-4 text-center">Cart</h3>
+                <CartItem/>
+                <CartItem/>
+                <CartItem/>
+
             </div>
             <div className="md:w-[30%] w-full">
                 <p className="text-2xl font-semibold mb-4">Summary</p>
                 <div className="w-full flex justify-between">
-                <p className="font-semibold">Do you have a Promo Code?</p>
-                <input type="text" className="focus:outline-none border-b-2 w-[6rem]"/>
+                    <p className="font-semibold">Do you have a Promo Code?</p>
+                    <input type="text" className="focus:outline-none border-b-2 w-[6rem]" />
                 </div>
                 <div className="w-full flex justify-between py-2">
                     <p>Total Items</p>
@@ -57,6 +62,7 @@ export default function AddtoCart() {
                     <p>Total</p>
                     <p className="font-extrabold">$98.00</p>
                 </div>
+                <button type="button" className="w-full h-[3rem] bg-gradient-to-br mt-4 from-purple to-pink text-[white] rounded-[1.5rem] border-non">Checkout</button>
             </div>
         </div>
     </section>
