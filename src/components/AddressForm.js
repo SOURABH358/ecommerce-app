@@ -1,6 +1,10 @@
 import { BsFillHouseFill, BsBuilding } from "react-icons/bs";
 
-export default function AddressForm() {
+export default function AddressForm({setShowForm, setShowPayment}) {
+    function handleClick(){
+        setShowForm(false);
+        setShowPayment(true);
+    }
     return <section className="w-full min-h-[100vh] pt-8">
         <div className="w-full flex items-center justify-center">
             <div className="w-4 h-4 rounded-[50%] bg-purple"></div>
@@ -68,7 +72,7 @@ export default function AddressForm() {
                     <button type="button" className="flex items-center gap-x-2 py-2 px-4 border-2 border-purple text-purple rounded-3xl focus:bg-purple focus:border-none focus:text-[white]"><BsFillHouseFill /><p>Home</p></button>
                     <button type="button" className="flex items-center gap-x-2 py-2 px-4 border-2 border-purple text-purple rounded-3xl focus:bg-purple focus:border-none focus:text-[white]"><BsBuilding /> <p>Work</p></button>
                 </div>
-                <button className="w-full py-3 text-[white] bg-gradient-to-br from-purple to-pink rounded-3xl mt-8">Save Address</button>
+                <button className="w-full py-3 text-[white] bg-gradient-to-br from-purple to-pink rounded-3xl mt-8" onClick={handleClick}>Save Address</button>
             </div>
         </div>
     </section>

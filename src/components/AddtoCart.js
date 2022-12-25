@@ -1,7 +1,11 @@
 import { useState } from "react";
 import CartItem from "./CartItem";
-export default function AddtoCart() {
+export default function AddtoCart({setShowCart, setShowForm}) {
     const [totalItem, setTotalItem] = useState(0);
+    function handleClick(){
+        setShowCart(false)
+        setShowForm(true);
+    }
     return <section className="py-8">
         <div className="w-full flex items-center justify-center">
             <div className="w-4 h-4 rounded-[50%] bg-purple"></div>
@@ -10,7 +14,7 @@ export default function AddtoCart() {
             <div className="w-[10rem] h-2 bg-[grey]"></div>
             <div className="w-4 h-4 rounded-[50%] bg-[grey]"></div>
         </div>
-        <div className="w-full flex items-center justify-center mt-2 gap-16">
+        <div className="w-full flex items-center justify-center mt-2 gap-16 py-4 shadow-xl">
             <p className="">Select items</p>
             <p>Shipping Address</p>
             <p>Payment</p>
@@ -66,7 +70,7 @@ export default function AddtoCart() {
                     <p>Total</p>
                     <p className="font-extrabold">$98.00</p>
                 </div>
-                <button type="button" className="w-full h-[3rem] bg-gradient-to-br mt-4 from-purple to-pink text-[white] rounded-[1.5rem] border-non">Checkout</button>
+                <button type="button" className="w-full h-[3rem] bg-gradient-to-br mt-4 from-purple to-pink text-[white] rounded-[1.5rem] border-non" onClick={handleClick}>Checkout</button>
             </div>
         </div>
     </section>

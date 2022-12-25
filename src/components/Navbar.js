@@ -5,6 +5,7 @@ import { auth, provider } from "../firebase/Firebase";
 import { collection, addDoc } from "firebase/firestore"; 
 import { db } from "../firebase/Firebase";
 import { GetAuthContext } from "../Reducer/AuthContext";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     const [menu, showMenu] = useState(false)
@@ -34,7 +35,7 @@ export default function Navbar() {
         </form>
         <div className="hidden md:flex text-[white] gap-6 items-center">
             {currentUser?null:<p className="md:block cursor-pointer px-2 py-1 border-2 border-[white] rounded-md hover:bg-purple hover:border-purple shadow-lg" onClick={handleLogin}>Login</p>}
-            <p className="cursor-pointer"><BsFillCartFill className="text-[white] text-2xl hover:text-purple shadow-lg" /></p>
+            <p className="cursor-pointer"><Link to="/cart"><BsFillCartFill className="text-[white] text-2xl hover:text-purple shadow-lg" /></Link></p>
             <div className="text-[white] flex gap-x-2 items-center">
                 <p className="hidden md:block">{currentUser.displayName}</p>
                 <div className="w-[3rem] h-[3rem] rounded-[50%] hover:border-4 hover:border-[white] bg-purple"></div>
