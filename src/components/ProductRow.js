@@ -1,15 +1,18 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from "swiper";
-import { BsChevronCompactRight, BsChevronCompactLeft,BsFillStarFill } from "react-icons/bs";
+import { BsFillStarFill } from "react-icons/bs";
+import { GetProdContext } from '../Reducer/productContext';
 import 'swiper/css';
 import "swiper/css/navigation";
 
 import { useRef } from 'react';
 import { products } from '../utils/data';
+import { Link } from 'react-router-dom';
 
 export default function ProductRow({ category }) {
     const preEl = useRef()
     const nextEl = useRef()
+    const {setCurrentProd} = GetProdContext();
     return <section className="px-4 w-full relative my-8 bg-[white] py-8">
         <h3 className="text-[1.25rem] text-[black] mb-4">{category}</h3>
         <Swiper
@@ -52,6 +55,7 @@ export default function ProductRow({ category }) {
             {products.map(item => {
                 if (item.categories === category)
                     return <SwiperSlide><div className=' rounded-lg'>
+                        <Link to={`/products/${item.id}`} onClick={()=>setCurrentProd(item.id)}>
                         <div className='h-[20rem] flex justify-center'>
                             <img className='max-h-full' src={item.thumbnail} alt={`item-${item.id}`} /></div>
                         <p className='text-center my-4 h-[3rem]'>{item.name}</p>
@@ -59,6 +63,7 @@ export default function ProductRow({ category }) {
                             <p className='text-dark-green flex items-center gap-x-1'><BsFillStarFill/><BsFillStarFill/><BsFillStarFill/><BsFillStarFill/>{item.ratings}</p>
                             <p className='text-red'>-{item.discount} off</p>
                         </div>
+                        </Link>
                     </div></SwiperSlide>
             })}
 

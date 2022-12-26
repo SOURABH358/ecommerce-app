@@ -8,6 +8,9 @@
 .swiper-pagination-bullet-active{
     background-color: white;
 }
+#products .swiper-pagination-bullet-active{
+    background-color: #5F0A87;
+}
 .swiper-button-prev, .swiper-button-next{
     color:white;
     padding: 2rem;
@@ -17,8 +20,9 @@
     
 }
 #products .swiper-button-prev, #products .swiper-button-next{
-    color: white;
+    color: #5F0A87;
     background-color: transparent;
     border-radius: 0;
     padding: 0;
+    transform: translateY(0);
 }
