@@ -39,8 +39,8 @@ export default function Navbar() {
     return <nav className="w-full h-[6rem] bg-gradient-to-r from-purple to-pink px-8 flex items-center justify-between">
         <p className="text-[white] text-[1.5rem]">Shopzy</p>
         <form className="rounded-md bg-[white] overflow-hidden">
-            <input type="search" name="search" className="w-[10rem] md:w-[50vw] md:h-10 focus:outline-none px-4 leading-8" 
-            placeholder="search..." />
+            <input type="search" name="search" className="w-[10rem] md:w-[50vw] md:h-10 focus:outline-none px-4 leading-8"
+                placeholder="search..." />
             <button className="w-[2.5rem]" type="button">
                 <BsSearch className="text-purple" />
             </button>
@@ -57,19 +57,25 @@ export default function Navbar() {
             </div>
             <div className="text-[white] flex gap-x-2 items-center">
                 <p className="hidden md:block">{currentUser ? currentUser.displayName : ""}</p>
-                <div className="w-[3rem] h-[3rem] rounded-[50%] hover:border-4 hover:border-[white] bg-purple"
-                onClick={() => showMenu(true)}></div>
+                <div className="w-[3rem] h-[3rem] rounded-[50%] overflow-hidden hover:border-4 hover:border-[white] bg-purple"
+                    onClick={() => showMenu(true)}>
+                    <img src="/assets/default.jpg" className="w-full" alt="user" />
+                </div>
             </div>
         </div>
         <div className="md:hidden flex gap-6 items-center">
             {/* <p className="md:block cursor-pointer px-2 py-1 border-2 border-[white] text-[white] rounded-md hover:bg-purple hover:border-purple shadow-lg">Login</p> */}
 
-            <div className="w-[3rem] h-[3rem] rounded-[50%] hover:border-4 hover:border-[white] bg-purple" 
-            onClick={() => showMenu(true)}></div>
+            <div className="w-[3rem] h-[3rem] rounded-[50%] hover:border-4 overflow-hidde hover:border-[white] bg-purple"
+                onClick={() => showMenu(true)}>
+                <img src="/assets/default.jpg" alt="user" className="w-full" />
+            </div>
         </div>
         {menu ? <div className="fixed top-0 md:top-[6rem] md:shadow-xl md:rounded-lg right-0  md:w-fit w-[70%] md:h-fit h-full bg-[white] z-10 px-[2rem] py-[2rem]">
             <div className="flex gap-6 items-center border-b-2 py-2">
-                <div className="w-[3rem] h-[3rem] rounded-[50%] bg-pink"></div>
+                <div className="w-[3rem] h-[3rem] rounded-[50%] overflow-hidden bg-pink">
+                    <img src="/assets/default.jpg" alt="user" className="w-full" />
+                </div>
                 <p className="text-[1.25rem]">{currentUser ? currentUser.displayName : ""}</p>
             </div>
             <p className="py-4"><Link to="/cart">Cart</Link></p>
