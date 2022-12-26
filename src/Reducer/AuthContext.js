@@ -7,7 +7,7 @@ export default function AuthContextWrapper({children}){
     const [currentUser, setCurrentUser] = useState({})
     useEffect(()=>{
         const unsub = onAuthStateChanged(auth, (user)=>{
-            setCurrentUser(user)
+            setCurrentUser(auth.currentUser)
         })
         return ()=>{
             unsub();
