@@ -23,7 +23,7 @@ export default function Navbar() {
                         uid: result.user.uid,
                         name: result.user.displayName,
                         email: result.user.email,
-                        Address: "",
+                        Address: [],
                         Cart: [],
                     });
                 } catch (e) {
