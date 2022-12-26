@@ -54,7 +54,7 @@ export default function ProductRow({ category }) {
             {/* <div className="absolute top-[50%] font-bold -translate-y-[100%] text-[4rem] right-1 z-10 cursor-pointer text-purple" ref={nextEl}><BsChevronCompactRight /></div> */}
             {products.map(item => {
                 if (item.categories === category)
-                    return <SwiperSlide><div className=' rounded-lg'>
+                    return <SwiperSlide key={item.id}><div className=' rounded-lg'>
                         <Link to={`/products/${item.id}`} onClick={()=>setCurrentProd(item.id)}>
                         <div className='h-[20rem] flex justify-center'>
                             <img className='max-h-full' src={item.thumbnail} alt={`item-${item.id}`} /></div>

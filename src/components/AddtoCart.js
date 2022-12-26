@@ -9,27 +9,30 @@ export default function AddtoCart({ setShowCart, setShowForm }) {
     const [userData, setUserData] = useState({})
     const [totalPrice, setTotalPrice] = useState(0)
 
-    console.log(userData);
     function handleClick() {
-        setShowCart(false)
-        setShowForm(true);
+        if (totalItem !== 0) {
+            setShowCart(false)
+            setShowForm(true);
+        }
+        else{
+            alert('Please select an Item for checkout')
+        }
+
     }
-    
+
     useEffect(() => {
 
-        try{
-            if(currentUser.uid)
-            {
+        try {
+            if (currentUser.uid) {
 
                 const unsub = onSnapshot(doc(db, "Users", currentUser.uid), (res) => {
                     setUserData(res.data());
                 });
-                return ()=>{
+                return () => {
                     return unsub();
                 }
             }
-        }catch(error)
-        {
+        } catch (error) {
             console.log(error)
         }
     }, [])
@@ -60,13 +63,13 @@ export default function AddtoCart({ setShowCart, setShowForm }) {
                     </p>
                 </div>
                 <h3 className="text-2xl font-semibold mt-4 mb-8 text-center">Cart</h3>
-                {userData.Cart?userData.Cart.map(item=>{
-                    return <CartItem
-                    setTotalItem={setTotalItem} 
-                    setTotalPrice={setTotalPrice}
-                    data= {item}/>
-                
-                }):null}
+                {userData.Cart ? userData.Cart.map(item => {
+                    return <CartItem key={item.id*100}
+                        setTotalItem={setTotalItem}
+                        setTotalPrice={setTotalPrice}
+                        data={item} />
+
+                }) : null}
             </div>
             <div className="md:w-[30%] w-full">
                 <p className="text-2xl font-semibold mb-4">Summary</p>
@@ -96,9 +99,10 @@ export default function AddtoCart({ setShowCart, setShowForm }) {
                 </div>
                 <div className="w-full flex justify-between py-2 mt-2 border-t-2 border-b-2">
                     <p>Total</p>
-                    <p className="font-extrabold">$ {totalPrice+8}</p>
+                    <p className="font-extrabold">$ {totalPrice + 8}</p>
                 </div>
-                <button type="button" className="w-full h-[3rem] bg-gradient-to-br mt-4 from-purple to-pink text-[white] rounded-[1.5rem] border-non" onClick={handleClick}>Checkout</button>
+                <button type="button" className="w-full h-[3rem] bg-gradient-to-br mt-4 from-purple to-pink text-[white] 
+                rounded-[1.5rem] border-non" onClick={handleClick}>Checkout</button>
             </div>
         </div>
     </section>

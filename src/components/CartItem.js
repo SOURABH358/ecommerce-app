@@ -1,9 +1,13 @@
+import { arrayRemove, doc, updateDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
+import { db } from "../firebase/Firebase";
+import { GetAuthContext } from "../Reducer/AuthContext";
 
 export default function CartItem({setTotalItem, data, setTotalPrice}) {
     const [item, setItem] = useState(1)
     const [show, setShow] = useState(true);
+    const currentUser = GetAuthContext();
     
     function handleIncrement(){
         setItem(item+1);
@@ -20,10 +24,14 @@ export default function CartItem({setTotalItem, data, setTotalPrice}) {
         setTotalItem(pre=>pre+item)
         setTotalPrice(pre=>pre+item*data.price)
     }
-    function handleRemove(){
-        setTotalItem(pre=>pre-item)
-        setTotalPrice(pre=>pre-item*data.price)
+    async function handleRemove(){
+        setTotalItem(pre=>pre===0?0:pre-item)
+        setTotalPrice(pre=>pre===0?0:pre-item*data.price)
         setShow(false)
+        if(currentUser.uid)
+        {await updateDoc(doc(db, "Users", currentUser.uid), {
+            Cart: arrayRemove(data)
+        });}
     }
     
     return (show?<div className="flex gap-4 items-center py-8 border-b-2">

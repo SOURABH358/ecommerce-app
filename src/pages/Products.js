@@ -79,7 +79,8 @@ export default function Products() {
                         <p className="text-purple font-semibold text-[1.2rem]">{cart}</p>
                         <p className="text-purple font-semibold text-2xl cursor-pointer" onClick={() => setCart(cart + 1)}>+</p>
                     </div>
-                    <button type="button" className="bg-purple border-none rounded-md text-[white] w-[50%] h-[3rem] flex items-center justify-center gap-x-4" onClick={handleSubmit}><BsFillCartFill /><p>Add to Cart</p></button>
+                    <button type="button" className={`bg-purple border-none rounded-md text-[white] w-[50%] h-[3rem] flex 
+                    items-center justify-center gap-x-4 ${cart===0?"disabled bg-light-purple":""}`} onClick={handleSubmit}><BsFillCartFill /><p>Add to Cart</p></button>
                 </div>
             </div>
         </div>
