@@ -33,7 +33,7 @@ export default function Navbar() {
         signOut(auth).then(() => {
             // Sign-out successful.
         }).catch((error) => {
-            // An error happened.
+            console.log(error)
         });
     }
     return <nav className="w-full h-[6rem] bg-gradient-to-r from-purple to-pink px-8 flex items-center justify-between">
@@ -45,8 +45,15 @@ export default function Navbar() {
             </button>
         </form>
         <div className="hidden md:flex text-[white] gap-6 items-center">
-            {currentUser ? null : <p className="md:block cursor-pointer px-2 py-1 border-2 border-[white] rounded-md hover:bg-purple hover:border-purple shadow-lg" onClick={handleLogin}>Login</p>}
-            <p className="cursor-pointer"><Link to="/cart"><BsFillCartFill className="text-[white] text-2xl hover:text-purple shadow-lg" /></Link></p>
+            {currentUser ? null : <p className="md:block cursor-pointer px-2 py-1 border-2 border-[white] 
+            rounded-md hover:bg-purple hover:border-purple shadow-lg" onClick={handleLogin}>Login
+            </p>}
+            <p className="cursor-pointer relative">
+                <Link to="/cart">
+                    <BsFillCartFill className="text-[white] text-2xl hover:text-purple shadow-lg" />
+                </Link>
+                <div className="absolute -top-2 left-0 py-2 px-2 bg-purple text-[white] rounded-[50%] text-[0.9rem]">{}</div>
+            </p>
             <div className="text-[white] flex gap-x-2 items-center">
                 <p className="hidden md:block">{currentUser ? currentUser.displayName : ""}</p>
                 <div className="w-[3rem] h-[3rem] rounded-[50%] hover:border-4 hover:border-[white] bg-purple"></div>
@@ -62,7 +69,7 @@ export default function Navbar() {
                 <div className="w-[3rem] h-[3rem] rounded-[50%] bg-pink"></div>
                 <p className="text-[1.25rem]">{currentUser ? currentUser.displayName : ""}</p>
             </div>
-            <p className="py-4">Cart</p>
+            <p className="py-4"><Link to="/cart">Cart</Link></p>
             <p className="py-4" onClick={handleLogOut}>Log Out</p>
             <p className="py-4">About</p>
             <p className="py-4">Contact</p>
