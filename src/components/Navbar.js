@@ -54,7 +54,7 @@ export default function Navbar() {
     }
 
     return <nav className="w-full h-[6rem] bg-gradient-to-r from-purple to-pink px-8 flex items-center justify-between">
-        <p className="text-[white] text-[1.5rem]">Shopzy</p>
+        <p className="text-[white] text-[1.5rem] cursor-pointer"><Link to="/">Shopzy</Link></p>
         <form className="rounded-md bg-[white] relative" onSubmit={(e)=>handleSubmit(e)}>
             <input type="search" name="search" className="w-[10rem] md:w-[50vw] rounded-md capitalize md:h-10 focus:outline-none px-4 leading-8"
                 placeholder="search..." onKeyDown={(e) => handleChange(e)} />
@@ -100,12 +100,12 @@ export default function Navbar() {
                 </div>
                 <p className="text-[1.25rem]">{currentUser ? currentUser.displayName : ""}</p>
             </div>
-            <p className="py-4"><Link to="/cart">Cart</Link></p>
-            <p className="py-4">Orders</p>
-            <p className="py-4">Shipping Address</p>
-            <p className="py-4" onClick={handleLogOut}>Log Out</p>
-            <p className="py-4">About</p>
-            <p className="py-4">Contact</p>
+            <p className="py-4 cursor-pointer"><Link to="/cart">Cart</Link></p>
+            <p className="py-4 cursor-pointer">Orders</p>
+            <p className="py-4 cursor-pointer">Shipping Address</p>
+            <p className="py-4 cursor-pointer" onClick={handleLogOut}>Log Out</p>
+            <p className="py-4 cursor-pointer">About</p>
+            <p className="py-4 cursor-pointer">Contact</p>
             <p className="py-4 cursor-pointer" onClick={() => showMenu(false)}>Close</p>
         </div> : null}
     </nav>

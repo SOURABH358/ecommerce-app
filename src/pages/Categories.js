@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import { products } from "../utils/data";
 import { categories } from "../utils/data";
-import { BsFillCartFill, BsFillStarFill, BsStarHalf, BsStar } from "react-icons/bs";
+import { BsFillStarFill, BsStarHalf, BsStar } from "react-icons/bs";
 
 export default function Categories() {
     return <section className="w-full min-h-[100vh] bg-light-grey">

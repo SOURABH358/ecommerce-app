@@ -11,10 +11,15 @@ export default function AddtoCart({ setShowCart, setShowForm }) {
 
     function handleClick() {
         if (totalItem !== 0) {
-            setShowCart(false)
-            setShowForm(true);
+            if (currentUser.uid) {
+                setShowCart(false)
+                setShowForm(true);
+            }
+            else {
+                alert('Please login before checkout!!')
+            }
         }
-        else{
+        else {
             alert('Please select an Item for checkout')
         }
 
@@ -64,7 +69,7 @@ export default function AddtoCart({ setShowCart, setShowForm }) {
                 </div>
                 <h3 className="text-2xl font-semibold mt-4 mb-8 text-center">Cart</h3>
                 {userData.Cart ? userData.Cart.map(item => {
-                    return <CartItem key={item.id*100}
+                    return <CartItem key={item.id * 100}
                         setTotalItem={setTotalItem}
                         setTotalPrice={setTotalPrice}
                         data={item} />
