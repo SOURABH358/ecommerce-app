@@ -1,6 +1,6 @@
 import { arrayRemove, doc, updateDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
-import { BsChevronDown, BsChevronUp,BsFillStarFill } from "react-icons/bs";
+import { BsChevronDown, BsChevronUp,BsFillStarFill, BsStarHalf, BsStar } from "react-icons/bs";
 import { db } from "../firebase/Firebase";
 import { GetAuthContext } from "../Reducer/AuthContext";
 
@@ -56,10 +56,11 @@ export default function CartItem({ setTotalItem, data, setTotalPrice }) {
                 <p className="text-[grey] line-through">$ {data.originalPrice}</p>
                 <div className="flex items-center gap-x-2">
                     <p className="text-dark-green">{data.ratings}</p>
-                    <BsFillStarFill className="text-dark-green" />
-                    <BsFillStarFill className="text-dark-green" />
-                    <BsFillStarFill className="text-dark-green" />
-                    <BsFillStarFill className="text-dark-green" />
+                    {data.ratings>0?data.ratings>=1?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}
+                    {data.ratings>1?data.ratings>=2?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}
+                    {data.ratings>2?data.ratings>=3?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}
+                    {data.ratings>3?data.ratings>=4?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}
+                    {data.ratings>4?data.ratings>=5?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}
                 </div>
             </div>
         </div>

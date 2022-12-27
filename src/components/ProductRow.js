@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from "swiper";
-import { BsFillStarFill } from "react-icons/bs";
+import { BsFillStarFill, BsStar, BsStarHalf } from "react-icons/bs";
 import { GetProdContext } from '../Reducer/productContext';
 import 'swiper/css';
 import "swiper/css/navigation";
@@ -60,7 +60,13 @@ export default function ProductRow({ category }) {
                             <img className='max-h-full' src={item.thumbnail} alt={`item-${item.id}`} /></div>
                         <p className='text-center my-4 h-[3rem]'>{item.name}</p>
                         <div className='flex justify-between'>
-                            <p className='text-dark-green flex items-center gap-x-1'>{item.ratings}<BsFillStarFill/><BsFillStarFill/><BsFillStarFill/><BsFillStarFill/></p>
+                            <p className='text-dark-green flex items-center gap-x-1'>{item.ratings}
+                            {item.ratings>0?item.ratings>=1?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}
+                    {item.ratings>1?item.ratings>=2?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}
+                    {item.ratings>2?item.ratings>=3?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}
+                    {item.ratings>3?item.ratings>=4?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}
+                    {item.ratings>4?item.ratings>=5?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}
+                            </p>
                             <p className='text-red'>-{item.discount} off</p>
                         </div>
                         </Link>

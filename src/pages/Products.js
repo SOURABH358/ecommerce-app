@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from "swiper";
-import { BsFillCartFill, BsFillStarFill } from "react-icons/bs";
+import { BsFillCartFill, BsFillStarFill, BsStarHalf, BsStar } from "react-icons/bs";
 import { products } from "../utils/data";
 import { GetProdContext } from '../Reducer/productContext';
 import { GetAuthContext } from "../Reducer/AuthContext";
@@ -79,10 +79,11 @@ export default function Products() {
                 <p className="text-4xl pb-8 font-semibold">{product.name}</p>
                 <div className=" flex gap-x-2 mb-4 items-center text-[1.2rem]">
                     <p className="text-dark-green">{product.ratings}</p>
-                    <BsFillStarFill className="text-dark-green"/>
-                    <BsFillStarFill className="text-dark-green"/>
-                    <BsFillStarFill className="text-dark-green"/>
-                    <BsFillStarFill className="text-dark-green"/>
+                    {product.ratings>0?product.ratings>=1?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}
+                    {product.ratings>1?product.ratings>=2?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}
+                    {product.ratings>2?product.ratings>=3?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}
+                    {product.ratings>3?product.ratings>=4?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}
+                    {product.ratings>4?product.ratings>=5?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}
                 </div>
                 {<p className=" text-[grey]">{product.description}</p>}
                 {product.Sizes ? displaySizes():""}
