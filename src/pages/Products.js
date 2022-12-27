@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from "swiper";
-import { BsFillCartFill } from "react-icons/bs";
+import { BsFillCartFill, BsFillStarFill } from "react-icons/bs";
 import { products } from "../utils/data";
 import { GetProdContext } from '../Reducer/productContext';
 import { GetAuthContext } from "../Reducer/AuthContext";
@@ -22,12 +22,21 @@ export default function Products() {
     async function handleSubmit() {
         const userRef = doc(db, "Users", currentUser.uid);
 
-        
+
         await updateDoc(userRef, {
-            Cart:arrayUnion({...product})
+            Cart: arrayUnion({ ...product })
         });
     }
-
+    function displaySizes() {
+        return <div className="flex gap-x-4 items-center mt-4">
+            <p className="text-[1.2rem] font-bold">Sizes</p>
+            <div className="flex gap-x-2">
+                {product.Sizes ? product.Sizes.map(item => {
+                    return <button className="focus:text-[white] py-2 w-[3rem] text-center border-2 cursor-pointer focus:bg-purple">{item}</button>
+                }) : null}
+            </div>
+        </div>
+    }
     useEffect(() => {
         products.map(item => {
             if (item.id === currentProd) {
@@ -37,6 +46,7 @@ export default function Products() {
         })
 
     }, [currentProd])
+
     return <section className="w-full h-full">
         <Navbar />
         <div id="products" className="md:w-[80%] md:mx-auto w-full py-[2rem] md:py-[7rem] md:grid md:grid-cols-[1fr_2fr] md:gap-x-[8rem]">
@@ -67,7 +77,15 @@ export default function Products() {
             <div className="text-left md:px-0 md:py-0 px-4 py-8">
                 <p className="text-2xl text-purple font-bold">{product.brand}</p>
                 <p className="text-4xl pb-8 font-semibold">{product.name}</p>
-                <p className=" text-[grey]">{product.description}</p>
+                <div className=" flex gap-x-2 mb-4 items-center text-[1.2rem]">
+                    <p className="text-dark-green">{product.ratings}</p>
+                    <BsFillStarFill className="text-dark-green"/>
+                    <BsFillStarFill className="text-dark-green"/>
+                    <BsFillStarFill className="text-dark-green"/>
+                    <BsFillStarFill className="text-dark-green"/>
+                </div>
+                {<p className=" text-[grey]">{product.description}</p>}
+                {product.Sizes ? displaySizes():""}
                 <p className="flex gap-x-8 mt-8">
                     <span className="text-[1.25rem] font-extrabold">$ {product.price}</span>
                     <span className="bg-light-purple py-1 px-2 rounded-md text-purple text-[1rem] font-extrabold">{product.discount} off</span>
@@ -80,7 +98,7 @@ export default function Products() {
                         <p className="text-purple font-semibold text-2xl cursor-pointer" onClick={() => setCart(cart + 1)}>+</p>
                     </div>
                     <button type="button" className={`bg-purple border-none rounded-md text-[white] w-[50%] h-[3rem] flex 
-                    items-center justify-center gap-x-4 ${cart===0?"disabled bg-light-purple":""}`} onClick={handleSubmit}><BsFillCartFill /><p>Add to Cart</p></button>
+                    items-center justify-center gap-x-4 ${cart === 0 ? "disabled bg-light-purple" : ""}`} onClick={handleSubmit}><BsFillCartFill /><p>Add to Cart</p></button>
                 </div>
             </div>
         </div>

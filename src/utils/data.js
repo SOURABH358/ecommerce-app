@@ -107,6 +107,120 @@ export const products=[
             '/assets/products/Phones/product-6/image-4.jpg'
         ]
     },
+    {
+        id:7,
+        brand: "aerotick",
+        name:"Women Printed Viscose Rayon Anarkali Kurta  (Dark Green)",
+        categories:"Womens Wear",
+        description:"",
+        Sizes:['S', 'M', 'L', 'XL', 'XXL'],
+        ratings:4.3,
+        originalPrice:2999,
+        price:435,
+        discount:'85%',
+        thumbnail:'/assets/products/Womens/product-1/image-1.jpg',
+        images:[
+            '/assets/products/Womens/product-1/image-1.jpg',
+            '/assets/products/Womens/product-1/image-2.jpg',
+            '/assets/products/Womens/product-1/image-3.jpg',
+            '/assets/products/Womens/product-1/image-4.jpg'
+        ] 
+    },
+    {
+        id:8,
+        brand: "Janasya",
+        name:"Women Printed Silk Blend Flared Kurta  (Beige)",
+        categories:"Womens Wear",
+        description:"Womens Wear",
+        Sizes:['S', 'M', 'L', 'XL', 'XXL'],
+        ratings:4.0,
+        originalPrice:1899,
+        price:657,
+        discount:'65%',
+        thumbnail:'/assets/products/Womens/product-2/image-1.jpg',
+        images:[
+            '/assets/products/Womens/product-2/image-1.jpg',
+            '/assets/products/Womens/product-2/image-2.jpg',
+            '/assets/products/Womens/product-2/image-3.jpg',
+            '/assets/products/Womens/product-2/image-4.jpg'
+        ] 
+    },
+    {
+        id:9,
+        brand: "BIBA",
+        name:"Women Solid Cotton Blend Frontslit Kurta  (Beige)",
+        categories:"Womens Wear",
+        description:"Womens Wear",
+        Sizes:['S', 'M', 'L', 'XL', 'XXL'],
+        ratings:4.3,
+        originalPrice:2799,
+        price:1289,
+        discount:'53%',
+        thumbnail:'/assets/products/Womens/product-3/image-1.jpg',
+        images:[
+            '/assets/products/Womens/product-3/image-1.jpg',
+            '/assets/products/Womens/product-3/image-2.jpg',
+            '/assets/products/Womens/product-3/image-3.jpg',
+            '/assets/products/Womens/product-3/image-4.jpg'
+        ] 
+    },
+    {
+        id:10,
+        brand: "VASANT APPAREL",
+        name:"Women Embroidered Viscose Rayon Anarkali Kurta  (Green)",
+        categories:"Womens Wear",
+        description:"Womens Wear",
+        Sizes:['S', 'M', 'L', 'XL', 'XXL'],
+        ratings:4.1,
+        originalPrice:2499,
+        price:348,
+        discount:'86%',
+        thumbnail:'/assets/products/Womens/product-4/image-1.jpg',
+        images:[
+            '/assets/products/Womens/product-4/image-1.jpg',
+            '/assets/products/Womens/product-4/image-2.jpg',
+            '/assets/products/Womens/product-4/image-3.jpg',
+            '/assets/products/Womens/product-4/image-4.jpg'
+        ] 
+    },
+    {
+        id:11,
+        brand: "VASANT APPAREL",
+        name:"Women Embroidered Viscose Rayon Anarkali Kurta  (Yellow)",
+        categories:"Womens Wear",
+        description:"Womens Wear",
+        Sizes:['S', 'M', 'L', 'XL', 'XXL'],
+        ratings:4.1,
+        originalPrice:1199,
+        price:348,
+        discount:'70%',
+        thumbnail:'/assets/products/Womens/product-5/image-1.jpg',
+        images:[
+            '/assets/products/Womens/product-5/image-1.jpg',
+            '/assets/products/Womens/product-5/image-2.jpg',
+            '/assets/products/Womens/product-5/image-3.jpg',
+            '/assets/products/Womens/product-5/image-4.jpg'
+        ] 
+    },
+    {
+        id:12,
+        brand: "Rupvali",
+        name:"Women Solid Viscose Rayon Anarkali Kurta  (Pink)",
+        categories:"Womens Wear",
+        description:"Womens Wear",
+        Sizes:['S', 'M', 'L', 'XL', 'XXL'],
+        ratings:4.3,
+        originalPrice:1399,
+        price:345,
+        discount:'75%',
+        thumbnail:'/assets/products/Womens/product-6/image-1.jpg',
+        images:[
+            '/assets/products/Womens/product-6/image-1.jpg',
+            '/assets/products/Womens/product-6/image-2.jpg',
+            '/assets/products/Womens/product-6/image-3.jpg',
+            '/assets/products/Womens/product-6/image-4.jpg'
+        ] 
+    }
 ]
 
 export const categories=[

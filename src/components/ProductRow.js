@@ -60,7 +60,7 @@ export default function ProductRow({ category }) {
                             <img className='max-h-full' src={item.thumbnail} alt={`item-${item.id}`} /></div>
                         <p className='text-center my-4 h-[3rem]'>{item.name}</p>
                         <div className='flex justify-between'>
-                            <p className='text-dark-green flex items-center gap-x-1'><BsFillStarFill/><BsFillStarFill/><BsFillStarFill/><BsFillStarFill/>{item.ratings}</p>
+                            <p className='text-dark-green flex items-center gap-x-1'>{item.ratings}<BsFillStarFill/><BsFillStarFill/><BsFillStarFill/><BsFillStarFill/></p>
                             <p className='text-red'>-{item.discount} off</p>
                         </div>
                         </Link>

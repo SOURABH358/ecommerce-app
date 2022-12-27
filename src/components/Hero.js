@@ -8,7 +8,7 @@ export default function Hero() {
         <p className="px-8 py-2 md:block hidden">
             <span className='px-4'>Categories</span>
             {categories.map(item=>{
-                return <span className='px-4 border-r-2'>{item}</span>
+                return <span className='px-4 border-l-2'>{item}</span>
             })}
         </p>
         <select className='py-2 px-2 my-2 mx-[2.5%] w-[95%] focus:outline-none md:hidden'>
