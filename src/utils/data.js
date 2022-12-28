@@ -393,6 +393,334 @@ export const products=[
             '/assets/products/Appliances/product-3/image-4.jpg'
         ]
     },
+    {
+        id:22,
+        brand: "boAt",
+        name:"boAt Rockerz 510 Super Extra Bass Bluetooth Headset",
+        categories:"Electronics",
+        description:"If you are looking for an efficient wireless headset, then this boAt headset is ideal for you. Its 50 mm drivers bring your audio files to life so that your aural experience is immersive. Moreover, you can enjoy up to 10 hours of playback time with a fully charged battery. Furthermore, it can be connected to your media devices with the help of an AUX cable as well.",
+        specs:"With Mic:Yes|Bluetooth version: 4.1|Wireless range: 10 m|Battery life: 20 hrs | Charging time: 2.5 hrs|Extra bass: Add extra thump to your music|Using simple touch controls answer phone calls, change music tracks and control volume|Lightweight and comfortable ear tips which is available in 3 sizes provides comfortable musical experience for longer listening",
+        ratings:4.4,
+        originalPrice:3499,
+        price:1631,
+        discount:'35%',
+        thumbnail:'/assets/products/Electronics/product-1/image-1.jpg',
+        images:[
+            '/assets/products/Electronics/product-1/image-1.jpg',
+            '/assets/products/Electronics/product-1/image-2.jpg',
+            '/assets/products/Electronics/product-1/image-3.jpg',
+            '/assets/products/Electronics/product-1/image-4.jpg'
+        ]
+    },
+    {
+        id:23,
+        brand: "SONY",
+        name:"SONY Alpha ILCE-7C Full Frame Mirrorless Camera Body Featuring Eye AF and 4K movie recording ",
+        categories:"Electronics",
+        description:"1 Camera, Rechargeable Battery, AC Adaptor, Shoulder Strap, Body Cap, Accessory Shoe Cap, USB-A to USB-C Cable (USB 3.2)",
+        specs:"Effective Pixels: 24.2 MP|Sensor Type: CMOS|WiFi Available|4K",
+        ratings:4.6,
+        originalPrice:166990,
+        price:147990,
+        discount:'12%',
+        thumbnail:'/assets/products/Electronics/product-2/image-1.jpg',
+        images:[
+            '/assets/products/Electronics/product-2/image-1.jpg',
+            '/assets/products/Electronics/product-2/image-2.jpg',
+            '/assets/products/Electronics/product-2/image-3.jpg',
+            '/assets/products/Electronics/product-2/image-4.jpg'
+        ]
+    },
+    {
+        id:24,
+        brand: "acer",
+        name:"acer Aspire 7 Core i5 12th Gen",
+        categories:"Electronics",
+        description:"Experience flawless operation and incredible performance with the innovative Acer Aspire laptop that comes loaded with an array of memersing features. Powered by the innovative 12th Gen Intel Core processor and NVIDIA GeForce RTX 3050, you can effortlessly multitask and easily handle demanding tasks. Moreover, the 32 GB of DDR4 RAM and a high-speed 512 SSD allow you to conveniently cruise through challenging tasks and experience high-speed file transfer. Furthermore, With a 19.90 mm thin, angular aluminium chassis and an elevating hinge, this laptop has a subtle design that can make you the centre of attention wherever you go.",
+        specs:"15.6 Inch Full HD with IPS (In-Plane Switching) Technology|Acer ComfyViewTM LED-backlit TFT LCD|16:9 aspect ratio|45% NTSC color gamut|Light Laptop without Optical Disk Drive",
+        ratings:4.3,
+        originalPrice:88990,
+        price:69990,
+        discount:'21%',
+        thumbnail:'/assets/products/Electronics/product-3/image-1.jpg',
+        images:[
+            '/assets/products/Electronics/product-3/image-1.jpg',
+            '/assets/products/Electronics/product-3/image-2.jpg',
+            '/assets/products/Electronics/product-3/image-3.jpg',
+            '/assets/products/Electronics/product-3/image-4.jpg'
+        ]
+    },
+    {
+        id:25,
+        brand: "PARLE",
+        name:"PARLE Bigger Bite Orange Candy  (195 g)",
+        categories:"Groceries",
+        description:"PARLE Bigger Bite Orange Candy  (195 g)",
+        specs:"Pack of - 1",
+        ratings:4.1,
+        originalPrice:50,
+        price:37,
+        discount:'26%',
+        thumbnail:'/assets/products/Groceries/product-1/image-1.jpg',
+        images:[
+            '/assets/products/Groceries/product-1/image-1.jpg',
+            '/assets/products/Groceries/product-1/image-2.jpg',
+        ]
+    },
+    {
+        id:26,
+        brand: "TRESemme",
+        name:"TRESemme Hair Fall Defense Shampoo  (1 L)",
+        categories:"Groceries",
+        description:"Nip hair fall due to breakage in its bud with this hair-fall defense shampoo from TRESemme. Enriched with the vital properties of Keratin, this shampoo reinforces strength to make for long, beautiful and strong hair. Reinforce Hair Strength - This mild formula from TRESemme is rich in Keratin, which strengthens your hair to prevent hair fall due to breakage. Specially Formulated for Indian Hair This TRESemme shampoo has been formulated keeping in mind the different types of Indian hair. It is also ideal for use with a host of oil treatments. Usage Gently massage this shampoo on your wet hair till it lathers properly. Rinse your hair thoroughly after you are done.",
+        specs:"Applied For - Anti-hair Fall|Hair Type - All Hair Types|Composition - Ingredients on Tag|Container Type - Dispenser|Ideal For - Men & Women",
+        ratings:4.4,
+        originalPrice:950,
+        price:807,
+        discount:'15%',
+        thumbnail:'/assets/products/Groceries/product-2/image-1.jpg',
+        images:[
+            '/assets/products/Groceries/product-2/image-1.jpg',
+            '/assets/products/Groceries/product-2/image-2.jpg'
+        ]
+    },
+    {
+        id:27,
+        brand: "Amul",
+        name:"Amul Taaza Homogenised Toned Milk",
+        categories:"Groceries",
+        description:"Amul Taaza Homogenised Toned Milk",
+        specs:"Flavor - Plain|Type - Toned|Quantity - 200 ml|Model Name - Taaza Homogenised Toned Milk",
+        ratings:4.4,
+        originalPrice:16,
+        price:15,
+        discount:'6%',
+        thumbnail:'/assets/products/Groceries/product-3/image-1.jpg',
+        images:[
+            '/assets/products/Groceries/product-3/image-1.jpg',
+            '/assets/products/Groceries/product-3/image-2.jpg',
+            '/assets/products/Groceries/product-3/image-3.jpg'
+        ]
+    },
+    {
+        id:28,
+        brand: "AASHIRVAAD",
+        name:"AASHIRVAAD Organic Urad Dal (Split)  (500 g)",
+        categories:"Groceries",
+        description:"AASHIRVAAD Organic Urad Dal (Split)  (500 g)",
+        specs:"Brand - AASHIRVAAD|Type - Urad Dal|Quantity - 500 g|Form - Split|Polished - No|Organic - Yes",
+        ratings:4.3,
+        originalPrice:140,
+        price:89,
+        discount:'36%',
+        thumbnail:'/assets/products/Groceries/product-4/image-1.jpg',
+        images:[
+            '/assets/products/Groceries/product-4/image-1.jpg',
+            '/assets/products/Groceries/product-4/image-2.jpg',
+            '/assets/products/Groceries/product-4/image-3.jpg'
+        ]
+    },
+    {
+        id:29,
+        brand: "Maaza",
+        name:"Maaza Mango  (1.2 L)",
+        categories:"Groceries",
+        description:"Enjoy the juicy pulp of mangoes anytime, anywhere with the Maaza mango drink from the Coca-Cola Company. This universally loved drink is made from real pulp of handpicked Alphonso mangoes. Mango Indulgence - Enjoy this sweet, rich and thick mango fruit drink that comes infused with delightful Alphonso mangoes. Ready-to-serve Mango Drink - This drink, that is best served chilled, is made from actual mango pulp of Alphonso mangoes to give you an authentic and refreshing experience.",
+        specs:"Model Name - Mango|Quantity - 1.2 L|Type - Fruit|Flavor For Refiner - Mango|Container Type - Plastic Bottle",
+        ratings:4.2,
+        originalPrice:75,
+        price:56,
+        discount:'25%',
+        thumbnail:'/assets/products/Groceries/product-5/image-1.jpg',
+        images:[
+            '/assets/products/Groceries/product-5/image-1.jpg',
+            '/assets/products/Groceries/product-5/image-2.jpg',
+        ]
+    },
+    {
+        id:30,
+        brand: "Vim",
+        name:"Vim Dishwash Anti Bac Liquid Dish Cleaning Gel  (Neem, 2 L)",
+        categories:"Groceries",
+        description:"Vim Dishwash Anti Bac Liquid Dish Cleaning Gel  (Neem, 2 L)",
+        specs:"Model Name - Dishwash Anti Bac Liquid|Fragrance - Neem|Container Type - Pouch|Liquid Quantity - 2 L",
+        ratings:4.4,
+        originalPrice:387,
+        price:479,
+        discount:'19%',
+        thumbnail:'/assets/products/Groceries/product-6/image-1.jpg',
+        images:[
+            '/assets/products/Groceries/product-6/image-1.jpg',
+            '/assets/products/Groceries/product-6/image-2.jpg',
+        ]
+    },
+    {
+        id:31,
+        brand: "FUBAR",
+        name:"Men Striped Cotton Blend Straight Kurta  (Purple)",
+        categories:"Mens Wear",
+        description:"Men Striped Cotton Blend Straight Kurta  (Purple)",
+        Sizes:['S', 'M', 'L', 'XL', 'XXL'],
+        ratings:3.9,
+        originalPrice:1648,
+        price:399,
+        discount:'75%',
+        thumbnail:'/assets/products/Mens/product-4/image-1.jpg',
+        images:[
+            '/assets/products/Mens/product-4/image-1.jpg',
+            '/assets/products/Mens/product-4/image-2.jpg',
+            '/assets/products/Mens/product-4/image-3.jpg',
+            '/assets/products/Mens/product-4/image-4.jpg'
+        ]
+    },
+    {
+        id:32,
+        brand: "INDICLUB ",
+        name:"Pack of 2 Solid Men Black, Blue Casual Shorts",
+        categories:"Mens Wear",
+        description:"Pack of 2 Solid Men Black, Blue Casual Shorts",
+        Sizes:['S', 'M', 'L', 'XL', 'XXL'],
+        ratings:4.1,
+        originalPrice:1299,
+        price:319,
+        discount:'75%',
+        thumbnail:'/assets/products/Phones/product-5/image-1.jpg',
+        images:[
+            '/assets/products/Mens/product-5/image-1.jpg',
+            '/assets/products/Mens/product-5/image-2.jpg'
+        ]
+    },
+    {
+        id:33,
+        brand: "RED TAPE",
+        name:"Sneakers For Men  (White)",
+        categories:"Mens Wear",
+        description:"Sneakers For Men  (White)",
+        Sizes:['6', '7', '8', '9', '10'],
+        ratings:4.1,
+        originalPrice:5199,
+        price:1299,
+        discount:'75%',
+        thumbnail:'/assets/products/Mens/product-6/image-1.jpg',
+        images:[
+            '/assets/products/Mens/product-6/image-1.jpg',
+            '/assets/products/Mens/product-6/image-2.jpg',
+            '/assets/products/Mens/product-6/image-3.jpg',
+            '/assets/products/Mens/product-6/image-4.jpg'
+        ]
+    },
+    {
+        id:34,
+        brand: "PHILIPS",
+        name:"PHILIPS HP8100/60 Hair Dryer  (1000 W, Blue)",
+        categories:"Electronics",
+        description:"Compact and ergonomic, this hairdryer benefits from a clever modern design. This results in a dryer that is light and easy to handle yet small enough to store virtually anywhere.This 1000W hairdryer creates the optimum level of airflow and gentle drying power, for beautiful results every day.The rubberised hook is located at the base of the handle and provides another storage option, particularly convenient for use in the home or when staying at a hotel.The concentrator works by focusing the flow of air through the opening onto specific areas. This results in precise styling and is great for touch ups or to finish a style.2 years of worldwide guarantee.The ThermoProtect temperature provides the optimal drying temperature and gives additional protection from overheating the hair. With the same powerful airflow, you will get the best results in a caring way.Careful drying with 2 flexible heat settings.",
+        specs:"2 heat settings|2 speed settings|Wattage: 1000 W|1.5 m cord length",
+        ratings:4.3,
+        originalPrice:1095,
+        price:832,
+        discount:'24%',
+        thumbnail:'/assets/products/Electronics/product-4/image-1.jpg',
+        images:[
+            '/assets/products/Electronics/product-4/image-1.jpg',
+            '/assets/products/Electronics/product-4/image-2.jpg',
+            '/assets/products/Electronics/product-4/image-3.jpg',
+            '/assets/products/Electronics/product-4/image-4.jpg'
+        ]
+    },
+    {
+        id:35,
+        brand: "ORAIMO",
+        name:"ORAIMO 30000 mAh Power Bank",
+        categories:"Electronics",
+        description:"ORAIMO 30000 mAh Power Bank (15 W, Fast Charging)  (Black, Lithium Polymer)",
+        specs:"Weight: 691 g | Capacity: 30000 mAh|Lithium Polymer Battery | Type-C Connector|Power Source: AC Adapter|Charging Cable Included",
+        ratings:4.4,
+        originalPrice:3999,
+        price:2999,
+        discount:'25%',
+        thumbnail:'/assets/products/Electronics/product-5/image-1.jpg',
+        images:[
+            '/assets/products/Electronics/product-5/image-1.jpg',
+            '/assets/products/Electronics/product-5/image-2.jpg',
+            '/assets/products/Electronics/product-5/image-3.jpg'
+        ]
+    },
+    {
+        id:36,
+        brand: "Honor",
+        name:"Honor Magic Watch 2 (46mm) Smartwatch  (Black Strap, Regular)",
+        categories:"Electronics",
+        description:"If you are looking for an elegantly crafted smartwatch, then the Honor MagicWatch 2 is the one for you. This stylish smartwatch comes with an Always-On Display, customizable watch faces, and a long-lasting battery. It also comes with a range of activity-based programs that help you reach your fitness goal with ease.",
+        specs:"46mm (1.39-inch) AMOLED Color Full Touch Screen|SpO2 Monitor It Detects the Oxygen Saturation Levels|Bluetooth Calls: Call, Answer, Decline calls & Call Waiting, Contacts list, Call Records|Watch Faces Store: Multiple & Customizable Watch Faces 100+ Workout Modes|Music Playback Control music and 4GB built-in storage|Battery Life 455 mAh Battery lasts for up to 2 Weeks|Other Health Monitors: 24/7Heart Rate Monitor, TruSleep Monitor, Stress Test|With Call Function|Touchscreen|Fitness & Outdoor|Battery Runtime: Upto 14 days",
+        ratings:4.4,
+        originalPrice:14999,
+        price:9999,
+        discount:'33%',
+        thumbnail:'/assets/products/Electronics/product-6/image-1.jpg',
+        images:[
+            '/assets/products/Electronics/product-6/image-1.jpg',
+            '/assets/products/Electronics/product-6/image-2.jpg',
+            '/assets/products/Electronics/product-6/image-3.jpg'
+        ]
+    },
+    {
+        id:37,
+        brand: "Prestige",
+        name:"Prestige Omega Festival Pack ",
+        categories:"Home",
+        description:"Prestige Omega Festival Pack - Build Your Kitchen Induction Bottom Non-Stick Coated Cookware Set  (Aluminium, 3 - Piece). Featuring a frying pan, tawa, kadai and glass lid, this Prestige cookware set is designed for healthy cooking. Crafted for the Indian household, this cookware comes with a good-quality aluminium body, an induction- and gas-compatible base and a chemical-free, non-stick coating.",
+        specs:"Made of: Aluminium|Inclusions: Fry Pan, Tawa, Kadhai|Non-stick Coating|Capacity: Fry Pan - 1.5L L, Kadhai - 2.6L L|Dishwasher Safe, Induction Bottom, Lid Included",
+        ratings:4.3,
+        originalPrice:2995,
+        price:1499,
+        discount:'49%',
+        thumbnail:'/assets/products/Home/product-4/image-1.jpg',
+        images:[
+            '/assets/products/Home/product-4/image-1.jpg',
+            '/assets/products/Home/product-4/image-2.jpg',
+            '/assets/products/Home/product-4/image-3.jpg',
+            '/assets/products/Home/product-4/image-4.jpg'
+        ]
+    },
+    {
+        id:38,
+        brand: "The Sleep Company",
+        name:"The Sleep Company SmartGRID Luxe 78x72 8 inch King High Density (HD) Foam Mattress",
+        categories:"Home",
+        description:"Sleeping has never been this luxurious! The Luxe Mattress king size has an extra plush layer of LuxioTec combined with SmartGRID which enhances its core cushioning and gives a cloud-like sleeping experience. It’s soft, It’s Plushy, It’s Cozy, It’s Comfy. SmartGRID Luxe is the perfect comfort companion for those who crave a cozy soft thick mattress feel.",
+        specs:"Length: 78 inch, Width: 72 inch, Thickness: 8 inch (6 ft 6 in x 6 ft x 8 in)|Support Type: High Density (HD) Foam|Comfort Layer: High Density (HD) Foam|Mattress Features: Dual Comfort Mattress",
+        Sizes:['6 in', '8 in','10 in'],
+        ratings:4.2,
+        originalPrice:45900,
+        price:29900,
+        discount:'34%',
+        thumbnail:'/assets/products/Home/product-5/image-1.jpg',
+        images:[
+            '/assets/products/Home/product-5/image-1.jpg',
+            '/assets/products/Home/product-5/image-2.jpg',
+            '/assets/products/Home/product-5/image-3.jpg',
+            '/assets/products/Home/product-5/image-4.jpg'
+        ]
+    },
+    {
+        id:39,
+        brand: "SHIRA",
+        name:"SHIRA 24 XXXL Tear Drop Bean Bag Cover (Without Beans)  (Brown, Tan)",
+        categories:"Home",
+        description:"Shira24 provide the highest quality Bean Bag cover and you can also add the bean as well from us. Shira24 Bean Bag cover offer the highest quality design which suits your home background . Shira 24 bean bag cover are manufactured using the best imported machines in a quality-controlled atmosphere to maintain finest quality. Shira24 Bean Bag is most demanding bean bag because of the finest quality of the product. Shira24 bean bag are made up of soft leatherette fabric with double stitching. These bean bag are made up with double protection for bean with Velcro & zipper. Double stitched with extra strength. If you want to buy bean bag with beans for your home, office then try this shira24 Bean Bag With bean which is ready use & in assembled state. Shira24 Bean Bag created in way that it automatically adjust with the body posture and give you the maximum comfort. Order The best Bean Bag With Bean for you now. The comfort of using this Bean Bag is awesome as these bean bag cover are soft, durable artificial leather that was developed in partnership with a top leather manufacturer, assuring a top quality products to maintain the high quality of products. Strong stitching allows the seams to withstand weights of up to 80 to 130kg.Top handle makes it easy to grasp, lift, and move your favourite Bean Bag with Bean around the house..",
+        specs:"It's Not The Air Bag|Double Stitching|This Is Bean Bag Cover|Filled The Thermocol",
+        Sizes:['L', 'XL', 'XXL', 'XXXL', '4XL'],
+        ratings:3.9,
+        originalPrice:1899,
+        price:639,
+        discount:'66%',
+        thumbnail:'/assets/products/Home/product-6/image-1.jpg',
+        images:[
+            '/assets/products/Home/product-6/image-1.jpg',
+            '/assets/products/Home/product-6/image-2.jpg'
+        ]
+    }
 ]
 
 export const categories=[
