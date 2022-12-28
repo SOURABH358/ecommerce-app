@@ -92,10 +92,10 @@ export default function Products() {
                     {product.ratings > 4 ? product.ratings >= 5 ? <BsFillStarFill className="text-dark-green" /> : <BsStarHalf className="text-dark-green" /> : <BsStar className="text-dark-green" />}
                 </div>
                 <p className="flex gap-x-8">
-                    <span className="text-[1.25rem] font-extrabold">$ {product.price}</span>
+                    <span className="text-[1.25rem] font-extrabold">₹ {product.price}</span>
                     <span className="bg-light-purple py-1 px-2 rounded-md text-purple text-[1rem] font-extrabold">{product.discount} off</span>
                 </p>
-                <p className="text-[grey] line-through font-semibold mb-8">$ {product.originalPrice}</p>
+                <p className="text-[grey] line-through font-semibold mb-8">₹ {product.originalPrice}</p>
                 {product.specs ? <div className="mb-4">
                     <p className="font-bold">Specifications</p>
                     <ul className="">

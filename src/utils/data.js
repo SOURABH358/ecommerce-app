@@ -221,7 +221,178 @@ export const products=[
             '/assets/products/Womens/product-6/image-3.jpg',
             '/assets/products/Womens/product-6/image-4.jpg'
         ] 
-    }
+    },
+    {
+        id:13,
+        brand: "Allen Solly",
+        name:"Men Color Block Polo Neck Multicolor T-Shirt",
+        categories:"Mens Wear",
+        description:"Mens Wear ...",
+        Sizes:['S', 'M', 'L', 'XL', 'XXL'],
+        ratings:4.1,
+        originalPrice:1049,
+        price:681,
+        discount:'35%',
+        thumbnail:'/assets/products/Mens/product-1/image-1.jpg',
+        images:[
+            '/assets/products/Mens/product-1/image-1.jpg',
+            '/assets/products/Mens/product-1/image-2.jpg',
+            '/assets/products/Mens/product-1/image-3.jpg',
+            '/assets/products/Mens/product-1/image-4.jpg'
+        ]
+    },
+    {
+        id:14,
+        brand: "HIGHLANDER",
+        name:"Men Slim Mid Rise Blue Jeans",
+        categories:"Mens Wear",
+        description:"Mens Wear ...",
+        Sizes:['30', '32', '34', '36', '38'],
+        ratings:3.8,
+        originalPrice:1299,
+        price:597,
+        discount:'54%',
+        thumbnail:'/assets/products/Mens/product-2/image-1.jpg',
+        images:[
+            '/assets/products/Mens/product-2/image-1.jpg',
+            '/assets/products/Mens/product-2/image-2.jpg',
+            '/assets/products/Mens/product-2/image-3.jpg',
+            '/assets/products/Mens/product-2/image-4.jpg'
+        ]
+    },
+    {
+        id:15,
+        brand: "NIKE",
+        name:"NK DOWNSHIFTER 12 Running Shoes For Men  (Black)",
+        categories:"Mens Wear",
+        description:"Mens Wear ...",
+        Sizes:['6', '7', '8', '9', '10','11','12'],
+        ratings:4.2,
+        originalPrice:3999,
+        price:3276,
+        discount:'17%',
+        thumbnail:'/assets/products/Mens/product-3/image-1.jpg',
+        images:[
+            '/assets/products/Mens/product-3/image-1.jpg',
+            '/assets/products/Mens/product-3/image-2.jpg',
+            '/assets/products/Mens/product-3/image-3.jpg',
+            '/assets/products/Mens/product-3/image-4.jpg'
+        ]
+    },
+    {
+        id:16,
+        brand: "Studio Kook",
+        name:"Studio Kook Jazz Compact Glass Coffee Table  (Finish Color - Walnut, Pre-assembled)",
+        categories:"Home",
+        description:"Modern Coffee Table for Urban Homes . Compact Centre Table with a unique combination of Glass. Metal and Engineered wood. Coffee Table with drawers for storage. This glass centre table is an easy place to keep your remotes, magazines, books, and table & tea coasters. Specially designed for Indian homes. Easy to clean and maintain.",
+        specs:"Particle Board|Metal|W x H x D: 98 cm x 45 cm x 60 cm (3 ft 2 in x 1 ft 5 in x 1 ft 11 in)|Storage Included|Pre Assembled (Ready to Use)",
+        ratings:4.7,
+        originalPrice:24880,
+        price:15126,
+        discount:'39%',
+        thumbnail:'/assets/products/Home/product-1/image-1.jpg',
+        images:[
+            '/assets/products/Home/product-1/image-1.jpg',
+            '/assets/products/Home/product-1/image-2.jpg',
+            '/assets/products/Home/product-1/image-3.jpg',
+            '/assets/products/Home/product-1/image-4.jpg'
+        ]
+    },
+    {
+        id:17,
+        brand: "Spacecrafts",
+        name:"Spacecrafts Fabric Manual Recliner  (Finish Color - Black, Pre-assembled)",
+        categories:"Home",
+        description:"The Spacecrafts Recliner is the ideal way to relax. The Spacecrafts Recliner complemented by both back and seat pad recron cushions and the set has been made with powder coated tubular metal finished frame, making it both weatherproof and strong. Spacecrafts foldable recliner chair is easy to carry. It is a combination of both recliner sofa and an easy chair.",
+        specs:"Material: Fabric|5 Reclining Positions|Filling Material: Foam|W x H x D: 46 mm x 110 mm x 57 mm (1 in x 4 in x 2 in)|Delivery Condition: Pre Assembled (Ready to Use)",
+        ratings:4.2,
+        originalPrice:5999,
+        price:4036,
+        discount:'32%',
+        thumbnail:'/assets/products/Home/product-2/image-1.jpg',
+        images:[
+            '/assets/products/Home/product-2/image-1.jpg',
+            '/assets/products/Home/product-2/image-2.jpg',
+            '/assets/products/Home/product-2/image-3.jpg',
+            '/assets/products/Home/product-2/image-4.jpg'
+        ]
+    },
+    {
+        id:18,
+        brand: "FurnitureKraft",
+        name:"FurnitureKraft Caen Double Metal Sofa Bed  (Finish Color - Blue Mechanism Type - Pull Out Delivery Condition - Knock Down)",
+        categories:"Home",
+        description:"Its tough and durable structure allows this furniture to last longer. Its durability can be further increased by powder-coating processes. To ensure smooth movement, this furniture comes with castor wheels. This sofa comes with a metal designer pattern at the back which gives it a premium look. This sofa comes with accent cushions that blend effortlessly into the room and sets the right mood. This sofa can be turned into a bed instantly. Thanks to its foldable mattress, this furniture can be turned into a bed anytime you want.",
+        specs:"Mattress Included: Yes|Seat Capacity: 3 Seater|W x H x D: 194.48 cm x 80.49 cm x 65.17 cm (6 ft 4 in x 2 ft 7 in x 2 ft 1 in)|Delivery Condition: Knock Down - Delivered in non-assembled pieces, installation by service partner",
+        ratings:4.3,
+        originalPrice:26399,
+        price:22890,
+        discount:'13%',
+        thumbnail:'/assets/products/Home/product-3/image-1.jpg',
+        images:[
+            '/assets/products/Home/product-3/image-1.jpg',
+            '/assets/products/Home/product-3/image-2.jpg',
+            '/assets/products/Home/product-3/image-3.jpg',
+            '/assets/products/Home/product-3/image-4.jpg'
+        ]
+    },
+    {
+        id:19,
+        brand: "Thomson",
+        name:"Thomson 9A Series 108 cm (43 inch) Full HD LED Smart Android TV with Bezel Less Display  (43PATH0009 BL)",
+        categories:"Appliances",
+        description:"If you have an HD set-top box at home, then this Thomson TV is the right home entertainment appliance for you. The high-quality display offers an impressive depth, natural colours, and also stunning textures for an immersive viewing experience, and a Bezel-less Design for stunning aesthetics.",
+        specs:"Supported Apps: Prime Video/Disney+Hotstar/Youtube|Operating System: Android (Google Assistant & Chromecast in-built)|Resolution: Full HD 1920 x 1080 Pixels|Sound Output: 40 W|Refresh Rate: 60 Hz",
+        ratings:4.4,
+        originalPrice:29999,
+        price:15999,
+        discount:'46%',
+        thumbnail:'/assets/products/Appliances/product-1/image-1.jpg',
+        images:[
+            '/assets/products/Appliances/product-1/image-1.jpg',
+            '/assets/products/Appliances/product-1/image-2.jpg',
+            '/assets/products/Appliances/product-1/image-3.jpg',
+            '/assets/products/Appliances/product-1/image-4.jpg'
+        ]
+    },
+    {
+        id:20,
+        brand: "SAMSUNG",
+        name:"SAMSUNG 6.5 kg Diamond Drum feature Fully Automatic Top Load Silver  (WA65A4002VS/TL)",
+        categories:"Appliances",
+        description:"Are you looking for a washing machine that does not damage your clothes? If yes, bring home the Samsung washing machine that features centre jet technology that generates streams of water from the centre of the pulsator to prevent the clothes from settling on the pulsators and getting damaged. The diamond drum of this washing machine is gentle on clothes and even ensures delicate clothes are not damaged. The child lock function prevents the tampering of settings that virtues in before a wash program was initiated.",
+        specs:"Fully Automatic Top Load Washing Machines are ergonomically friendly and provide great wash quality|680 rpm : Higher the spin speed, lower the drying time|3 Star Rating|6.5 kg",
+        ratings:4.4,
+        originalPrice:16800,
+        price:14590,
+        discount:'13%',
+        thumbnail:'/assets/products/Appliances/product-2/image-1.jpg',
+        images:[
+            '/assets/products/Appliances/product-2/image-1.jpg',
+            '/assets/products/Appliances/product-2/image-2.jpg',
+            '/assets/products/Appliances/product-2/image-3.jpg',
+            '/assets/products/Appliances/product-2/image-4.jpg'
+        ]
+    },
+    {
+        id:21,
+        brand: "Haier",
+        name:"Haier 195 L Direct Cool Single Door 4 Star Refrigerator  (Prism Glass, HRD-1954CPG-E)",
+        categories:"Appliances",
+        description:"Storing fruits, vegetables, and leftover food items is now convenient with the Haier 195 L HRD-1954CPG-E Direct Cool Single-door Refrigerator. Thanks to its up-to-1-hour icing technology, this refrigerator’s freezer can rapidly generate ice using long condenser coils and robust PUF insulation. With its robust compressors, this refrigerator can operate smoothly at a range of 135 V to up to 290 V. Moreover, owing to its large vegetable box, this refrigerator provides additional space so that you can store a wide range of vegetables.",
+        specs:"195 L : Good for couples and small families|Reciprocatory Compressor|4 Star : For Energy savings up to 45%|Direct Cool : Economical, consumes less electricity, requires manual defrosting",
+        ratings:4.4,
+        originalPrice:28990,
+        price:16990,
+        discount:'39%',
+        thumbnail:'/assets/products/Appliances/product-3/image-1.jpg',
+        images:[
+            '/assets/products/Appliances/product-3/image-1.jpg',
+            '/assets/products/Appliances/product-3/image-2.jpg',
+            '/assets/products/Appliances/product-3/image-3.jpg',
+            '/assets/products/Appliances/product-3/image-4.jpg'
+        ]
+    },
 ]
 
 export const categories=[
