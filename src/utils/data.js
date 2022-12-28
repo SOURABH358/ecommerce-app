@@ -2,12 +2,13 @@ export const products=[
     {
         id:1,
         brand: "Samsung",
-        name:"SAMSUNG Galaxy F13 (Sunrise Copper, 64 GB)  (4 GB RAM)",
+        name:"SAMSUNG Galaxy S10 (Prism Blue, 128 GB)  (8 GB RAM)",
         categories:"Mobiles",
-        description:"Enjoy seamless connectivity and an uninterrupted movie marathon with the impressive Samsung Galaxy F13 that is designed specifically to impress the entertainment fanatics. This smartphone features a terrific 16.62 cm (6.6) FHD+ LCD Display that can effortlessly blow your mind with its incredible performance. Furthermore, this phone boasts a 50 MP Triple Camera setup that allows you to capture awesomeness with a gentle tap. Moreover, the Samsung Galaxy F13 sports up to 8 GB of RAM and features an innovative RAM plus technology that taps into the phone’s internal storage to elevate its performance.",
-        ratings:4.4,
-        originalPrice:14999,
-        price:11999,
+        description:"Get ready to explore the next generation of powerful computing and mobile photography with the Samsung Galaxy S10. It comes with an Intelligent Camera that automatically optimizes its settings to give you picture-perfect photos. That's not all, the Samsung S10 has the Infinity-O Display and a seamless design that make this smartphone a true masterpiece.",
+        specs:"8 GB RAM | 128 GB ROM | Expandable Upto 512 GB 15.49 cm (6.1 inch) Quad HD+ Display 16MP + 12MP | 10MP Front Camera 3400 mAh Lithium-ion Battery Exynos 9 9820 Processor",
+        ratings:4.5,
+        originalPrice:49999,
+        price:39999,
         discount:'20%',
         thumbnail:'/assets/products/Phones/product-1/image-1.jpg',
         images:[

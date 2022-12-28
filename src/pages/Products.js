@@ -20,12 +20,18 @@ export default function Products() {
     const { currentProd } = GetProdContext();
     const currentUser = GetAuthContext();
     async function handleSubmit() {
-        const userRef = doc(db, "Users", currentUser.uid);
-
-
-        await updateDoc(userRef, {
-            Cart: arrayUnion({ ...product })
-        });
+        if(currentUser.uid)
+        {
+            const userRef = doc(db, "Users", currentUser.uid);
+    
+    
+            await updateDoc(userRef, {
+                Cart: arrayUnion({ ...product, quantity:cart })
+            });
+        }
+        else{
+            alert('Please log in!!')
+        }
     }
     function displaySizes() {
         return <div className="flex gap-x-4 items-center mt-4">
@@ -51,7 +57,7 @@ export default function Products() {
         <Navbar />
         <div id="products" className="md:w-[80%] md:mx-auto w-full py-[2rem] md:py-[7rem] md:grid md:grid-cols-[1fr_2fr] md:gap-x-[8rem]">
             <Swiper
-                className="mySwiper w-full relative text-[white]"
+                className="mySwiper w-full relative text-[white] h-fit"
                 spaceBetween={50}
                 slidesPerView={1}
                 modules={[Autoplay, Pagination, Navigation]}
@@ -79,19 +85,29 @@ export default function Products() {
                 <p className="text-4xl pb-8 font-semibold">{product.name}</p>
                 <div className=" flex gap-x-2 mb-4 items-center text-[1.2rem]">
                     <p className="text-dark-green">{product.ratings}</p>
-                    {product.ratings>0?product.ratings>=1?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}
-                    {product.ratings>1?product.ratings>=2?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}
-                    {product.ratings>2?product.ratings>=3?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}
-                    {product.ratings>3?product.ratings>=4?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}
-                    {product.ratings>4?product.ratings>=5?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}
+                    {product.ratings > 0 ? product.ratings >= 1 ? <BsFillStarFill className="text-dark-green" /> : <BsStarHalf className="text-dark-green" /> : <BsStar className="text-dark-green" />}
+                    {product.ratings > 1 ? product.ratings >= 2 ? <BsFillStarFill className="text-dark-green" /> : <BsStarHalf className="text-dark-green" /> : <BsStar className="text-dark-green" />}
+                    {product.ratings > 2 ? product.ratings >= 3 ? <BsFillStarFill className="text-dark-green" /> : <BsStarHalf className="text-dark-green" /> : <BsStar className="text-dark-green" />}
+                    {product.ratings > 3 ? product.ratings >= 4 ? <BsFillStarFill className="text-dark-green" /> : <BsStarHalf className="text-dark-green" /> : <BsStar className="text-dark-green" />}
+                    {product.ratings > 4 ? product.ratings >= 5 ? <BsFillStarFill className="text-dark-green" /> : <BsStarHalf className="text-dark-green" /> : <BsStar className="text-dark-green" />}
                 </div>
-                {<p className=" text-[grey]">{product.description}</p>}
-                {product.Sizes ? displaySizes():""}
-                <p className="flex gap-x-8 mt-8">
+                <p className="flex gap-x-8">
                     <span className="text-[1.25rem] font-extrabold">$ {product.price}</span>
                     <span className="bg-light-purple py-1 px-2 rounded-md text-purple text-[1rem] font-extrabold">{product.discount} off</span>
                 </p>
-                <p className="text-[grey] line-through font-semibold">$ {product.originalPrice}</p>
+                <p className="text-[grey] line-through font-semibold mb-8">$ {product.originalPrice}</p>
+                {product.specs ? <div className="mb-4">
+                    <p className="font-bold">Specifications</p>
+                    <ul className="">
+                        {product.specs.split('|').map(item => <li className="py-2 text-[grey]">{item}</li>)}</ul>
+                </div>
+                    : null}
+                {<div>
+                    <p className="font-bold">Description</p>
+                    <p className=" text-[grey]">{product.description}</p>
+                </div>}
+                {product.Sizes ? displaySizes() : ""}
+
                 <div className="flex gap-x-4 mt-8 items-center">
                     <div className="bg-light-purple flex w-[50%] h-[3rem] justify-between py-4 px-4 items-center rounded-md">
                         <p className="text-purple font-semibold text-2xl cursor-pointer" onClick={() => cart > 0 ? setCart(cart - 1) : null}>-</p>
