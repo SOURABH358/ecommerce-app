@@ -40,10 +40,10 @@ export default function Navbar() {
         });
     }
     function handleChange(e) {
-        if (e.code == 'Backspace') {
+        if (e.code === 'Backspace') {
             setQuery(null)
         }
-        else if (e.code == 'Enter') {
+        else if (e.code === 'Enter') {
             let regex = new RegExp(e.target.value, 'i');
             setQuery(products.filter(item => item.name.match(regex)))
             console.log(e.target.value)

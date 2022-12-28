@@ -1,5 +1,5 @@
 import { arrayRemove, doc, updateDoc } from "firebase/firestore";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { BsChevronDown, BsChevronUp,BsFillStarFill, BsStarHalf, BsStar } from "react-icons/bs";
 import { db } from "../firebase/Firebase";
 import { GetAuthContext } from "../Reducer/AuthContext";

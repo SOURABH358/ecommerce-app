@@ -230,7 +230,7 @@ export const categories=[
     'Home',
     'Appliances',
     'Electronics',
-    'Top Offers'
+    'Groceries'
 ]
 /*
 {
