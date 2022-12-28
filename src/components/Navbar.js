@@ -12,7 +12,7 @@ export default function Navbar() {
     const [menu, showMenu] = useState(false)
     const [query, setQuery] = useState(null)
     const currentUser = GetAuthContext();
-    const {setCurrentProd} = GetProdContext();
+    const { setCurrentProd } = GetProdContext();
     // const [menu, showMenu] = useState(false)
     console.log(query)
     async function handleLogin() {
@@ -49,13 +49,13 @@ export default function Navbar() {
             console.log(e.target.value)
         }
     }
-    function handleSubmit(e){
+    function handleSubmit(e) {
         e.preventDefault();
     }
 
     return <nav className="w-full h-[6rem] bg-gradient-to-r from-purple to-pink px-8 flex items-center justify-between">
         <p className="text-[white] text-[1.5rem] cursor-pointer"><Link to="/">Shopzy</Link></p>
-        <form className="rounded-md bg-[white] relative" onSubmit={(e)=>handleSubmit(e)}>
+        <form className="rounded-md bg-[white] relative" onSubmit={(e) => handleSubmit(e)}>
             <input type="search" name="search" className="w-[10rem] md:w-[50vw] rounded-md capitalize md:h-10 focus:outline-none px-4 leading-8"
                 placeholder="search..." onKeyDown={(e) => handleChange(e)} />
             <button className="w-[2.5rem]" type="button">
@@ -63,7 +63,9 @@ export default function Navbar() {
             </button>
             {query ? <div className=" absolute top-[3rem] left-0 w-full py-[1rem] bg-[white] shadow-lg z-20">
                 {query.map(item => {
-                    return <div className="py-[1rem] px-[1rem] text-[black] cursor-pointer" onClick={()=>setCurrentProd(item.id)}><Link to={`products/${item.id}`}>{item.name}</Link></div>
+                    return <div className="py-[1rem] px-[1rem] text-[black] cursor-pointer" onClick={() => setCurrentProd(item.id)}>
+                        <Link to={`/products/${item.id}`}>{item.name}</Link>
+                    </div>
                 })}
             </div> : null}
         </form>
@@ -79,7 +81,7 @@ export default function Navbar() {
             </div>
             <div className="text-[white] flex gap-x-2 items-center">
                 <p className="hidden md:block">{currentUser ? currentUser.displayName : ""}</p>
-                <div className="w-[3rem] h-[3rem] rounded-[50%] overflow-hidden hover:border-4 hover:border-[white] bg-purple"
+                <div className="w-[3rem] h-[3rem] rounded-[50%] overflow-hidden  bg-purple"
                     onClick={() => showMenu(true)}>
                     <img src="/assets/default.jpg" className="w-full" alt="user" />
                 </div>
@@ -88,7 +90,7 @@ export default function Navbar() {
         <div className="md:hidden flex gap-6 items-center">
             {/* <p className="md:block cursor-pointer px-2 py-1 border-2 border-[white] text-[white] rounded-md hover:bg-purple hover:border-purple shadow-lg">Login</p> */}
 
-            <div className="w-[3rem] h-[3rem] rounded-[50%] hover:border-4 overflow-hidde hover:border-[white] bg-purple"
+            <div className="w-[3rem] h-[3rem] rounded-[50%]  overflow-hidden  bg-purple"
                 onClick={() => showMenu(true)}>
                 <img src="/assets/default.jpg" alt="user" className="w-full" />
             </div>

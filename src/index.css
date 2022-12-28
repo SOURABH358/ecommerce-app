@@ -5,6 +5,16 @@
 *,*::after, *::before{
     box-sizing: border-box;
 }
+::-webkit-scrollbar{
+    width: 0.5rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #5F0A87;
+    border-radius: 0.5rem;
+}
+::-webkit-scrollbar-track{
+    background-color: #CBC3E3;
+}
 .swiper-pagination-bullet-active{
     background-color: white;
 }

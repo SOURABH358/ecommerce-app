@@ -3,6 +3,7 @@ import { products } from "../utils/data";
 import { categories } from "../utils/data";
 import { BsFillStarFill, BsStarHalf, BsStar } from "react-icons/bs";
 import { GetProdContext } from "../Reducer/productContext";
+import { Link } from "react-router-dom";
 export default function Categories() {
     const { currentCat, setCurrentCat, setCurrentProd } = GetProdContext();
     console.log(currentCat)
@@ -29,7 +30,7 @@ export default function Categories() {
                     return item.categories === currentCat ?
                         <div key={item.id * 203} className="md:w-[22rem] w-full p-4 h-[30rem] rounded-xl shadow-2xl bg-[white] cursor-pointer"
                             onClick={() => setCurrentProd(item.id)}>
-                            <Link to={`products/${item.id}`}><div className="w-full flex justify-center border-light-purple border-2 rounded-md py-4">
+                            <Link to={`/products/${item.id}`}><div className="w-full flex justify-center border-light-purple border-2 rounded-md py-4">
                                 <img src={item.thumbnail} alt="category-product" className="h-[15rem]" />
                             </div>
                                 <p className="text-center mt-4 h-[3rem]">{item.name}</p>
