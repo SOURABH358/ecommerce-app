@@ -320,7 +320,7 @@ export const products=[
     {
         id:18,
         brand: "FurnitureKraft",
-        name:"FurnitureKraft Caen Double Metal Sofa Bed  (Finish Color - Blue Mechanism Type - Pull Out Delivery Condition - Knock Down)",
+        name:"FurnitureKraft Caen Double Metal Sofa Bed",
         categories:"Home",
         description:"Its tough and durable structure allows this furniture to last longer. Its durability can be further increased by powder-coating processes. To ensure smooth movement, this furniture comes with castor wheels. This sofa comes with a metal designer pattern at the back which gives it a premium look. This sofa comes with accent cushions that blend effortlessly into the room and sets the right mood. This sofa can be turned into a bed instantly. Thanks to its foldable mattress, this furniture can be turned into a bed anytime you want.",
         specs:"Mattress Included: Yes|Seat Capacity: 3 Seater|W x H x D: 194.48 cm x 80.49 cm x 65.17 cm (6 ft 4 in x 2 ft 7 in x 2 ft 1 in)|Delivery Condition: Knock Down - Delivered in non-assembled pieces, installation by service partner",
@@ -339,7 +339,7 @@ export const products=[
     {
         id:19,
         brand: "Thomson",
-        name:"Thomson 9A Series 108 cm (43 inch) Full HD LED Smart Android TV with Bezel Less Display  (43PATH0009 BL)",
+        name:"Thomson 9A Series 108 cm (43 inch) Full HD LED Smart Android TV with Bezel Less Display",
         categories:"Appliances",
         description:"If you have an HD set-top box at home, then this Thomson TV is the right home entertainment appliance for you. The high-quality display offers an impressive depth, natural colours, and also stunning textures for an immersive viewing experience, and a Bezel-less Design for stunning aesthetics.",
         specs:"Supported Apps: Prime Video/Disney+Hotstar/Youtube|Operating System: Android (Google Assistant & Chromecast in-built)|Resolution: Full HD 1920 x 1080 Pixels|Sound Output: 40 W|Refresh Rate: 60 Hz",
@@ -358,7 +358,7 @@ export const products=[
     {
         id:20,
         brand: "SAMSUNG",
-        name:"SAMSUNG 6.5 kg Diamond Drum feature Fully Automatic Top Load Silver  (WA65A4002VS/TL)",
+        name:"SAMSUNG 6.5 kg Diamond Drum feature Fully Automatic Top Load Silve",
         categories:"Appliances",
         description:"Are you looking for a washing machine that does not damage your clothes? If yes, bring home the Samsung washing machine that features centre jet technology that generates streams of water from the centre of the pulsator to prevent the clothes from settling on the pulsators and getting damaged. The diamond drum of this washing machine is gentle on clothes and even ensures delicate clothes are not damaged. The child lock function prevents the tampering of settings that virtues in before a wash program was initiated.",
         specs:"Fully Automatic Top Load Washing Machines are ergonomically friendly and provide great wash quality|680 rpm : Higher the spin speed, lower the drying time|3 Star Rating|6.5 kg",
@@ -377,7 +377,7 @@ export const products=[
     {
         id:21,
         brand: "Haier",
-        name:"Haier 195 L Direct Cool Single Door 4 Star Refrigerator  (Prism Glass, HRD-1954CPG-E)",
+        name:"Haier 195 L Direct Cool Single Door 4 Star Refrigerator",
         categories:"Appliances",
         description:"Storing fruits, vegetables, and leftover food items is now convenient with the Haier 195 L HRD-1954CPG-E Direct Cool Single-door Refrigerator. Thanks to its up-to-1-hour icing technology, this refrigerator’s freezer can rapidly generate ice using long condenser coils and robust PUF insulation. With its robust compressors, this refrigerator can operate smoothly at a range of 135 V to up to 290 V. Moreover, owing to its large vegetable box, this refrigerator provides additional space so that you can store a wide range of vegetables.",
         specs:"195 L : Good for couples and small families|Reciprocatory Compressor|4 Star : For Energy savings up to 45%|Direct Cool : Economical, consumes less electricity, requires manual defrosting",

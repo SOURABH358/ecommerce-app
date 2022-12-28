@@ -58,7 +58,7 @@ export default function ProductRow({ category }) {
                         <Link to={`/products/${item.id}`} onClick={()=>setCurrentProd(item.id)}>
                         <div className='h-[20rem] flex justify-center'>
                             <img className='max-h-full' src={item.thumbnail} alt={`item-${item.id}`} /></div>
-                        <p className='text-center my-4 h-[3rem]'>{item.name}</p>
+                        <p className='text-center my-4 h-[4rem]'>{item.name}</p>
                         <div className='flex justify-between'>
                             <p className='text-dark-green flex items-center gap-x-1'>{item.ratings}
                             {item.ratings>0?item.ratings>=1?<BsFillStarFill className="text-dark-green" />:<BsStarHalf className="text-dark-green"/>:<BsStar className="text-dark-green"/>}

@@ -81,8 +81,8 @@ export default function Products() {
 
             </Swiper>
             <div className="text-left md:px-0 md:py-0 px-4 py-8">
-                <p className="text-2xl text-purple font-bold">{product.brand}</p>
-                <p className="text-4xl pb-8 font-semibold">{product.name}</p>
+                <p className="md:text-2xl text-purple font-bold">{product.brand}</p>
+                <p className="md:text-4xl text-2xl pb-8 font-semibold">{product.name}</p>
                 <div className=" flex gap-x-2 mb-4 items-center text-[1.2rem]">
                     <p className="text-dark-green">{product.ratings}</p>
                     {product.ratings > 0 ? product.ratings >= 1 ? <BsFillStarFill className="text-dark-green" /> : <BsStarHalf className="text-dark-green" /> : <BsStar className="text-dark-green" />}
