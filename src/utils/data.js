@@ -720,7 +720,62 @@ export const products=[
             '/assets/products/Home/product-6/image-1.jpg',
             '/assets/products/Home/product-6/image-2.jpg'
         ]
-    }
+    },
+    {
+        id:40,
+        brand: "BAJAJ",
+        name:"BAJAJ 95 L Desert Air Cooler  (White, Black, DMH95(480114))",
+        categories:"Appliances",
+        description:"Bajaj DMH95 Air Cooler come with our thoughtfully designed Anti-bacterial Hexacool Master that treats you to cool and healthy air. The Anti-Bacterial Honeycomb Master ensures the delivery of fresh air by preventing the growth and collection of bacteria on the honeycomb pads of the back of the cooler. While the IoT and the remote-control features make it easy to control the cooler even from a distance, the digital panel displays the cooler settings for maximum comfort. It comes with Turbo Fan Technology for efficient circulation of air with 100 feet powerful air throw. The detachable tank tower makes the cleaning and refilling of the tank extremely convenient. It has 3 sided honeycomb pad for maximum cooling with 3 cooling multi-functional modes – Normal mode, Natural mode and sleep mode for enhanced customisation and energy efficiency. Bajaj DMH 95 Air Cooler comes with 3 speed control to adjust air flow according to the requirement. All these features and technologies make Bajaj Air Coolers the perfect choice for a pleasant summer.",
+        specs:"Tank Capacity: 95 L",
+        ratings:4.1,
+        originalPrice:14990,
+        price:12049,
+        discount:'19%',
+        thumbnail:'/assets/products/Appliances/product-4/image-1.jpg',
+        images:[
+            '/assets/products/Appliances/product-4/image-1.jpg',
+            '/assets/products/Appliances/product-4/image-2.jpg',
+            '/assets/products/Appliances/product-4/image-3.jpg'
+        ]
+    },
+    {
+        id:41,
+        brand: "BAJAJ",
+        name:"BAJAJ 20 L Grill Microwave Oven  (2016 MTBX, Black)",
+        categories:"Appliances",
+        description:"Simplify the way you cook/bake with this 20 L microwave oven from Bajaj that is suitable for medium-sized families. Don’t just reheat leftovers, you can also grill chicken to perfection as it comes with the Microwave and Grill Combo feature. With the Defrost function, you can thaw your frozen dishes without any hassle. To top this off, it comes with a Thermal Fuse for your safety.",
+        specs:"20 L|Grill : Can be used for grilling along with defrosting, reheating and cooking food|Mechanical Knob is an Easy-to-use Control that can have a long life|Child Lock : Ensures complete safety especially for homes with small children",
+        ratings:4.4,
+        originalPrice:5995,
+        price:5699,
+        discount:'4%',
+        thumbnail:'/assets/products/Appliances/product-5/image-1.jpg',
+        images:[
+            '/assets/products/Appliances/product-5/image-1.jpg',
+            '/assets/products/Appliances/product-5/image-2.jpg',
+            '/assets/products/Appliances/product-5/image-3.jpg'
+        ]
+    },
+    {
+        id:42,
+        brand: "Nova",
+        name:"Nova Plus Amaze NI 10 1100 W Dry Iron  (Grey & Turquoise)",
+        categories:"Appliances",
+        description:"Look stunning and exude confidence in crisp, creaseless clothes with the Nova Plus 1100 W Amaze NI 10 Dry Iron. This home appliance features a Non-stick Triple-coated Soleplate, Quick Heat Technology, and a 360-degree swivel cord for easy and quick ironing of different fabrics and garments.",
+        specs:"Spray: No|Soleplate Type: Non Stick Du point American Heritage Coating",
+        ratings:4.2,
+        originalPrice:899,
+        price:494,
+        discount:'45%',
+        thumbnail:'/assets/products/Appliances/product-6/image-1.jpg',
+        images:[
+            '/assets/products/Appliances/product-6/image-1.jpg',
+            '/assets/products/Appliances/product-6/image-2.jpg',
+            '/assets/products/Appliances/product-6/image-3.jpg',
+            '/assets/products/Appliances/product-6/image-4.jpg'
+        ]
+    },
 ]
 
 export const categories=[
